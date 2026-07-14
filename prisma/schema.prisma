@@ -1,0 +1,311 @@
+// AlmiGoethe data model. The shared engine foundation (auth, billing, AI cost
+// ledger) is forked from AlmiCELPIP. The practice layer is an ITEM-BANK: a single
+// GoetheItem ↔ GoetheAttempt pair carries every task type via a typed `payload`
+// Json, instead of one model per skill. Scoring is hybrid — deterministic for
+// objective modules (Lesen + Hören), AI trait-feedback for productive modules
+// (Schreiben + Sprechen) — and is reported as an honest practice POINTS estimate
+// per module (max points + 60% pass threshold), never a fabricated total.
+//
+// The big structural fact vs CELPIP: CELPIP's GENERAL/LS version axis is replaced
+// by SIX CEFR LEVELS (A1–C2), and — unlike CELPIP where the version lived only on
+// the session — a Goethe item belongs to exactly ONE level (A1 Lesen content is
+// not B2 Lesen content), so `level` lives ON THE ITEM and is the primary filter.
+// All content is original German, never copied from the Goethe-Institut; results
+// are practice estimates — candidates confirm the real requirement with the
+// Goethe-Institut / their university / the relevant German authority.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+enum Locale {
+  EN
+  UR
+  AR
+  HI
+}
+
+enum SubscriptionTier {
+  FREE
+  PREMIUM
+}
+
+model User {
+  id           String  @id @default(cuid())
+  email        String  @unique
+  name         String?
+  passwordHash String
+  locale       Locale  @default(EN)
+  countryCode  String?
+  referralCode String  @unique @default(cuid())
+
+  // Email verification — required before paid feature access.
+  emailVerified               DateTime?
+  emailVerificationTokenHash  String?   @unique
+  emailVerificationExpiresAt  DateTime?
+  emailVerificationLastSentAt DateTime?
+
+  // Stripe subscription state — webhook keeps this in lockstep with Stripe.
+  stripeCustomerId              String?          @unique
+  stripeSubscriptionId          String?          @unique
+  subscriptionStatus            String?
+  subscriptionPlan              String?
+  subscriptionCurrentPeriodEnd  DateTime?
+  subscriptionCancelAtPeriodEnd Boolean          @default(false)
+  trialEndsAt                   DateTime?
+  subscriptionTier              SubscriptionTier @default(FREE)
+
+  // Comp Pro access — admin-granted, no Stripe. isProActive()/hasPaidAccess()
+  // short-circuit true while compProUntil is in the future, bypassing BOTH the
+  // subscription check AND email verification. AlmiGoethe full Pro = AI feedback
+  // on Schreiben + Sprechen + the full per-level mock.
+  compProUntil  DateTime?
+  compGrantedAt DateTime?
+  compGrantedBy String?
+  compReason    String?
+
+  // Which Danish exam the user is preparing for (Prøve i Dansk / Studieprøven / knowledge tests).
+  // Drives the default mock and which practice content is surfaced. Null = not chosen.
+  targetExam DanishExam?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  sessions            Session[]
+  passwordResetTokens PasswordResetToken[]
+  daAttempts          DanishAttempt[]
+  daSessions          DanishSession[]
+  reviews             Review[]
+
+  @@index([email])
+  @@index([referralCode])
+  @@index([stripeCustomerId])
+  @@index([stripeSubscriptionId])
+  @@index([compProUntil])
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String   @unique
+  expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model ProcessedWebhook {
+  id          String   @id
+  eventType   String
+  processedAt DateTime @default(now())
+
+  @@index([processedAt])
+}
+
+model EarlyAccess {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  source    String?
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  rating    Int
+  text      String   @db.Text
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([approved, createdAt])
+}
+
+model AICostLedger {
+  id               String   @id @default(cuid())
+  timestamp        DateTime @default(now())
+  userId           String?
+  feature          String
+  model            String
+  inputTokens      Int
+  outputTokens     Int
+  cacheReadTokens  Int      @default(0)
+  cacheWriteTokens Int      @default(0)
+  costCents        Int
+  success          Boolean  @default(true)
+  errorMessage     String?
+
+  @@index([timestamp(sort: Desc)])
+  @@index([userId, timestamp])
+  @@index([feature, timestamp])
+}
+
+
+// ===================== Danish practice item-bank =====================
+// AlmiDanish covers THREE tracks via ONE item-bank:
+//   • Prøve i Dansk 3 (the citizenship language exam) — B1–B2 across Reading,
+//     Listening, Writing, Speaking. Overseen by the Ministry of Justice,
+//     delivered by the Directorate of Education and School Services (Miðstöð
+//     menntunar og skólaþjónustu). It is the language requirement for Danish
+//     citizenship. Scored per skill as an honest readiness estimate vs A2
+//     criteria — never an official Directorate/Ministry result.
+//   • Studieprøven — the advanced (≈C1) Danish exam — a
+//     higher-level proficiency route for Danish-taught study programmes.
+//   • General CEFR ladder (A1–C1) — self-study feeding the two exam tracks.
+// One DanishItem/DanishAttempt pair serves every task type via a typed
+// `payload` Json. All content is original; results are practice estimates —
+// confirm the real residency/citizenship requirement with SIRI.
+
+enum DanishTrack {
+  CITIZENSHIP // Prøve i Dansk 3 (B1–B2) + Indfødsretsprøven
+  PERMANENT_RESIDENCE // Prøve i Dansk 2 (A2–B1) + Medborgerskabsprøven
+  GETTING_STARTED // Prøve i Dansk 1 (A1–A2)
+  UNIVERSITY // Studieprøven (≈C1)
+}
+
+// Exam axis. The Prøve i Dansk language ladder (PD1–PD3 + Studieprøven) plus the
+// two society knowledge tests (Indfødsretsprøven / Medborgerskabsprøven).
+enum DanishExam {
+  PD1 // Prøve i Dansk 1 — A1–A2
+  PD2 // Prøve i Dansk 2 — A2–B1 (permanent residence)
+  PD3 // Prøve i Dansk 3 — B1–B2 (citizenship, lead)
+  STUDIEPROVEN // Studieprøven — ≈C1 (university)
+  INDFODSRETSPROVEN // Danish citizenship knowledge test
+  MEDBORGERSKABSPROVEN // Active-citizenship / PR knowledge test
+}
+
+enum DanishSkill {
+  READING // Læseforståelse (objective)
+  LISTENING // Lytteforståelse (objective)
+  WRITING // Skriftlig fremstilling (AI-graded)
+  SPEAKING // Mundtlig kommunikation (AI-graded)
+  KNOWLEDGE // Samfundskundskab — society knowledge MCQ (objective)
+}
+
+enum DanishTaskType {
+  MCQ_SINGLE // objective single-answer multiple choice (Reading/Listening)
+  MATCHING // objective matching
+  CLOZE // objective gap-fill (option-per-gap)
+  ORDERING // objective sequence
+  TRUE_FALSE // objective true/false/not-stated
+  WRITING_PROMPT // productive writing (criteria + char band)
+  SPEAKING_PROMPT // productive speaking (criteria)
+}
+
+enum DanishDifficulty {
+  FOUNDATION
+  CORE
+  STRETCH
+}
+
+enum DanishAttemptStatus {
+  PENDING
+  SCORED // objective auto-graded
+  EVALUATED // productive AI-graded
+  FAILED
+}
+
+enum DanishSessionMode {
+  PRACTICE
+  MOCK
+}
+
+enum DanishSessionStatus {
+  IN_PROGRESS
+  COMPLETED
+  ABANDONED
+}
+
+model DanishItem {
+  id         String          @id @default(cuid())
+  track      DanishTrack
+  exam       DanishExam
+  skill      DanishSkill
+  taskType   DanishTaskType
+  difficulty DanishDifficulty @default(CORE)
+  title      String
+  // Instruction / stem shown to the candidate (NL).
+  prompt     String
+  // Task-specific structure: objective → { options, passage, transcript, answerKey };
+  // productive → { criteria[], charBand, stimulus }. Validated in src/lib/nl/types.
+  payload    Json
+  // Objective answer key (null for productive/AI tasks).
+  answer     Json?
+  // Objective max points for this item (0 for productive; readiness is qualitative).
+  maxPoints  Int             @default(0)
+  active     Boolean         @default(true)
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+  attempts   DanishAttempt[]
+
+  @@index([track, exam, skill, active])
+  @@index([exam, skill])
+}
+
+model DanishAttempt {
+  id        String             @id @default(cuid())
+  userId    String
+  itemId    String
+  sessionId String?
+  status    DanishAttemptStatus @default(PENDING)
+  // User response: objective → selected answer(s); productive → { text } or { audioKey }.
+  response  Json?
+  // Objective scoring.
+  points    Int?
+  maxPoints Int?
+  // Productive AI trait feedback: { traits[], summary, estimate }.
+  aiFeedback Json?
+  // Honest readout: per-skill "CLEAR"|"BORDERLINE"|"BELOW" — never an official result.
+  readiness String?
+  createdAt   DateTime  @default(now())
+  submittedAt DateTime?
+
+  user    User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  item    DanishItem     @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  session DanishSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+
+  @@index([userId, createdAt])
+  @@index([itemId])
+  @@index([sessionId])
+}
+
+model DanishSession {
+  id        String             @id @default(cuid())
+  userId    String
+  track     DanishTrack
+  exam      DanishExam
+  mode      DanishSessionMode   @default(PRACTICE)
+  status    DanishSessionStatus @default(IN_PROGRESS)
+  // Aggregate readout: { perSkill: {skill: {points,max,readiness}}, overall }.
+  aggregate Json?
+  createdAt   DateTime  @default(now())
+  completedAt DateTime?
+
+  user     User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attempts DanishAttempt[]
+
+  @@index([userId, createdAt])
+}

@@ -1,0 +1,21 @@
+import { STUDY_TOTAL, JOBS_TOTAL } from "@/lib/seo/axes";
+
+// Next 16's generateSitemaps does NOT emit a sitemap index — it only serves the
+// shards at /sitemap/[id].xml. We publish an explicit <sitemapindex> here so
+// there's ONE URL to submit to Google Search Console; it lists every shard.
+export const dynamic = "force-static";
+
+const SITE = "https://almidanish.almiworld.com";
+const PER = 50_000;
+const LASTMOD = "2026-07-10";
+const TOTAL_SHARDS = 1 + Math.ceil(STUDY_TOTAL / PER) + Math.ceil(JOBS_TOTAL / PER);
+
+export function GET(): Response {
+  const items = Array.from({ length: TOTAL_SHARDS }, (_, i) =>
+    `<sitemap><loc>${SITE}/sitemap/${i}.xml</loc><lastmod>${LASTMOD}</lastmod></sitemap>`,
+  ).join("");
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${items}</sitemapindex>`;
+  return new Response(xml, {
+    headers: { "Content-Type": "application/xml", "Cache-Control": "public, max-age=3600" },
+  });
+}
