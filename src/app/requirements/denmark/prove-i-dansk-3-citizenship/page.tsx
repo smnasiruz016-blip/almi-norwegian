@@ -7,7 +7,7 @@ import Link from "next/link";
 export const revalidate = 2592000;
 
 const SITE = "https://almidanish.almiworld.com";
-const PATH = "/requirements/denmark/rikisborgaraprof-citizenship";
+const PATH = "/requirements/denmark/prove-i-dansk-3-citizenship";
 
 export const metadata: Metadata = {
   title: { absolute: "What Danish do you need for citizenship? Prøve i Dansk 3 at B1–B2 | AlmiDanish" },

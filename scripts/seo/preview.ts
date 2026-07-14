@@ -31,7 +31,7 @@ show("STUDY SAMPLE", buildStudyPage(
   resolveOriginBlock(COUNTRY_BY_SLUG.get("nigeria")!),
 ));
 
-// Sample 2 — JOBS: Registered Nurse, from India, Reykjavík
+// Sample 2 — JOBS: Registered Nurse, from India, Copenhagen
 show("JOBS SAMPLE", buildJobsPage(
   ROLE_BY_SLUG.get("registered-nurse")!,
   COUNTRY_BY_SLUG.get("india")!,
@@ -39,5 +39,5 @@ show("JOBS SAMPLE", buildJobsPage(
   resolveOriginBlock(COUNTRY_BY_SLUG.get("india")!),
 ));
 
-// Sample 3 — LEVEL: Ríkisborgarapróf (A2) — the citizenship language test (the lead)
+// Sample 3 — LEVEL: Prøve i Dansk 3 (B1–B2) — the citizenship language exam (the lead)
 show("LEVEL SAMPLE (Prøve i Dansk 3)", buildLevelPage(LANGUAGE_EXAMS[2]));

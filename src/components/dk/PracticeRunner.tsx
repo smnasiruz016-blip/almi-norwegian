@@ -89,8 +89,7 @@ export function PracticeRunner({
           </span>
         </div>
         <p className="text-xs text-almi-text-muted">
-          This is a practice estimate against the level&apos;s criteria, not an official
-          Directorate of Education result.
+          This is a practice estimate against the level&apos;s criteria, not an official SIRI or Ministry result.
         </p>
         <button
           type="button"

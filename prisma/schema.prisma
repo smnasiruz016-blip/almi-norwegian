@@ -165,16 +165,17 @@ model AICostLedger {
 
 
 // ===================== Danish practice item-bank =====================
-// AlmiDanish covers THREE tracks via ONE item-bank:
+// AlmiDanish covers FOUR goal tracks via ONE item-bank, all administered under
+// the Ministry of Immigration and Integration:
 //   • Prøve i Dansk 3 (the citizenship language exam) — B1–B2 across Reading,
-//     Listening, Writing, Speaking. Overseen by the Ministry of Justice,
-//     delivered by the Directorate of Education and School Services (Miðstöð
-//     menntunar og skólaþjónustu). It is the language requirement for Danish
-//     citizenship. Scored per skill as an honest readiness estimate vs A2
-//     criteria — never an official Directorate/Ministry result.
-//   • Studieprøven — the advanced (≈C1) Danish exam — a
-//     higher-level proficiency route for Danish-taught study programmes.
-//   • General CEFR ladder (A1–C1) — self-study feeding the two exam tracks.
+//     Listening, Writing, Speaking. It is the language exam commonly required
+//     for Danish citizenship, alongside the Indfødsretsprøven. Scored per skill
+//     as an honest readiness estimate vs the level's real criteria — never an
+//     official SIRI/Ministry result.
+//   • Prøve i Dansk 1 (A1–A2) and Prøve i Dansk 2 (A2–B1, permanent residence).
+//   • Studieprøven — the advanced (≈C1) Danish exam for Danish-taught study.
+//   • Indfødsretsprøven / Medborgerskabsprøven — Danish society knowledge tests
+//     (multiple-choice), not language proficiency.
 // One DanishItem/DanishAttempt pair serves every task type via a typed
 // `payload` Json. All content is original; results are practice estimates —
 // confirm the real residency/citizenship requirement with SIRI.
