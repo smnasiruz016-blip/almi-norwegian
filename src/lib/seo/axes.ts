@@ -28,6 +28,11 @@ export const ROLES = rolesJson as SeoRole[];
 // 🇩🇰 flag gave it away), overwritten Iceland's name with "Norway", and left the real
 // Norway row in place — so the list held 196 rows, two of them slugged "norway", no
 // Denmark at all, and Iceland labelled Norway. Fixed to 195 clean origins.
+// Origins only: 196 = the 197-country axis minus Norway itself. Norway's self-origin
+// and duplicate-slug corruption were fixed on 2026-07-15; the same day, Portugal was
+// found missing here too — inherited from almi-portuguese's copy, where dropping PT
+// was correct because PT was its own self, and never put back where it is a valid
+// origin. See scripts/seo/countries-axis-gate.mjs, which now fails the build on both.
 export const COUNTRIES = countriesJson as SeoCountry[];
 export const SUBJECTS = subjectsJson as SeoSubject[];
 export const HUBS = hubsJson as SeoHub[];
