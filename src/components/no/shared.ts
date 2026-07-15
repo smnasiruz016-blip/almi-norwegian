@@ -28,9 +28,18 @@ export interface SubmitResult {
   correct: boolean;
 }
 
-/** The BCP-47 voice tag for listening audio — Norwegian (all tracks). */
+/**
+ * The BCP-47 voice tag for listening audio — Norwegian Bokmål (all tracks).
+ *
+ * nb-NO, not the generic no-NO: every item in this product is written in Bokmål, so the
+ * voice should be too. Was "is-IS" (Icelandic) until 2026-07-15 — inherited unchanged
+ * through the AlmiIcelandic → AlmiDanish → AlmiNorwegian fork chain, where is-IS was only
+ * ever correct for the first. Every Listening transcript was read aloud in an Icelandic
+ * voice while the docstring said Norwegian. If you fork this product, change this line —
+ * nothing else can catch it.
+ */
 export function ttsLang(): string {
-  return "is-IS";
+  return "nb-NO";
 }
 
 /** POST a graded/echoed attempt to the submit API. DB-optional, never throws. */
