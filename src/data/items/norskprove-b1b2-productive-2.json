@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Complaint about noisy building work",
     "prompt": "Write a formal complaint based on the task.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Letter to the municipality",
     "prompt": "Write a formal letter to an authority based on the task.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Opinion on sorting waste",
     "prompt": "Write an opinion text based on the task.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Email to your child's teacher",
     "prompt": "Write a formal email based on the task.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Opinion on working from home",
     "prompt": "Write an opinion text based on the task.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Complaint to an internet provider",
     "prompt": "Write a formal complaint based on the task.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Letter to the editor on volunteering",
     "prompt": "Write an opinion text for a newspaper based on the task.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Argue about phones in schools",
     "prompt": "Present and argue a viewpoint.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Discuss welcoming newcomers",
     "prompt": "Present and argue a viewpoint.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Talk about healthy food",
     "prompt": "Speak on the given topic.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Talk about news habits",
     "prompt": "Speak on the given topic.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Argue about learning Norwegian at work",
     "prompt": "Present and argue a viewpoint.",
     "payload": {
@@ -197,6 +209,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Present your daily routine",
     "prompt": "Speak on the given topic.",
     "payload": {
@@ -213,6 +226,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Discuss saving energy at home",
     "prompt": "Present and argue a viewpoint.",
     "payload": {
@@ -229,6 +243,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Talk about a person you admire",
     "prompt": "Speak on the given topic.",
     "payload": {

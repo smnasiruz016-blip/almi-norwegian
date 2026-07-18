@@ -6,8 +6,8 @@
 // are framed as a "practice estimate" — never an official Directorate result.
 
 import { useState } from "react";
-import type { NorwegianSkill } from "@/lib/no/types";
-import { skillReadout, readinessFromPct } from "@/lib/no/grading";
+import type { NorwegianSkill, CefrLevel } from "@/lib/no/types";
+import { goalReadout, achievedReadout } from "@/lib/no/grading";
 import { SKILL_LABELS } from "@/lib/no/registry";
 import { ObjectiveTask } from "./ObjectiveTask";
 import { submitAttempt, type RunnerItem, type SubmitResult } from "./shared";
@@ -21,10 +21,15 @@ const READINESS_LABEL: Record<string, { text: string; cls: string }> = {
 export function PracticeRunner({
   examName,
   skill,
+  goalCefr,
   items,
 }: {
   examName: string;
   skill: NorwegianSkill;
+  /** The level THIS skill is banded against, when it has one at all. Norskprøven has
+   *  no pass mark; only the citizenship oral requirement gives SPEAKING a goal. Absent
+   *  = report the level reached instead of a readiness band. */
+  goalCefr?: CefrLevel;
   items: RunnerItem[];
 }) {
   const [step, setStep] = useState(0);
@@ -68,8 +73,19 @@ export function PracticeRunner({
   if (done) {
     const points = results.reduce((s, r) => s + r.points, 0);
     const maxPoints = results.reduce((s, r) => s + r.maxPoints, 0);
-    const readout = skillReadout(skill, points, maxPoints);
-    const band = READINESS_LABEL[readout.readiness] ?? READINESS_LABEL.BELOW;
+    // results are in item order, so results[i] pairs with items[i].
+    const scored = results.map((r, i) => ({
+      cefr: items[i]?.cefr,
+      points: r.points,
+      maxPoints: r.maxPoints,
+    }));
+    // Two different questions, because the exam answers two different questions.
+    // With a goal (citizenship oral): "are you meeting B1?" — banded from at-goal only.
+    // Without one: "what level are you working at?" — Norskprøven has no pass mark.
+    const goal = goalCefr ? goalReadout(scored, goalCefr) : null;
+    const achieved = goalCefr ? null : achievedReadout(scored);
+    const band =
+      goal && goal.readiness ? READINESS_LABEL[goal.readiness] ?? READINESS_LABEL.BELOW : null;
     return (
       <div className="space-y-5 rounded-2xl border border-almi-bg-peach bg-almi-paper p-6">
         <div>
@@ -80,16 +96,78 @@ export function PracticeRunner({
             {points} / {maxPoints} correct
           </h2>
         </div>
-        <div className="flex flex-wrap items-center gap-3">
-          <span className={`rounded-full px-3 py-1 text-sm font-semibold ${band.cls}`}>
-            {band.text}
-          </span>
-          <span className="text-sm text-almi-text-muted">
-            {readout.pct}% · readiness band {readinessFromPct(readout.pct)}
-          </span>
-        </div>
+        {goal ? (
+          <>
+            <div className="flex flex-wrap items-center gap-3">
+              {band ? (
+                <>
+                  <span className={`rounded-full px-3 py-1 text-sm font-semibold ${band.cls}`}>
+                    {band.text}
+                  </span>
+                  <span className="text-sm text-almi-text-muted">
+                    {goal.atGoalPct}% at CEFR {goal.goal} · from {goal.atGoalCount} task
+                    {goal.atGoalCount === 1 ? "" : "s"} at that level
+                  </span>
+                </>
+              ) : (
+                <span className="text-sm text-almi-text-muted">
+                  No {goalCefr} estimate yet — this set had no tasks at that level.
+                </span>
+              )}
+            </div>
+            {goal.aboveCount > 0 && (
+              <p className="text-xs text-almi-text-muted">
+                + {goal.aboveCount} task{goal.aboveCount === 1 ? "" : "s"} above {goal.goal}.
+                Norskprøven B1–B2 carries them, but they sit above what citizenship asks for,
+                so they are not counted for or against your {goal.goal} estimate.
+              </p>
+            )}
+          </>
+        ) : (
+          <>
+            <div className="flex flex-wrap items-center gap-3">
+              {achieved?.workingAt ? (
+                <span className="rounded-full bg-almi-teal/15 px-3 py-1 text-sm font-semibold text-almi-teal">
+                  Working at {achieved.workingAt}
+                </span>
+              ) : (
+                <span className="text-sm text-almi-text-muted">
+                  No level reached in this set yet.
+                </span>
+              )}
+              {achieved?.reachingFor && (
+                <span className="text-sm text-almi-text-muted">
+                  reaching for {achieved.reachingFor}
+                </span>
+              )}
+            </div>
+            {achieved && achieved.byLevel.length > 0 && (
+              <p className="text-sm text-almi-text-muted">
+                {achieved.byLevel
+                  .map(
+                    (l) =>
+                      `${l.cefr}: ${l.points}/${l.maxPoints} on ${l.count} task${
+                        l.count === 1 ? "" : "s"
+                      }${l.sufficient ? "" : " (too few to judge)"}`,
+                  )
+                  .join(" · ")}
+              </p>
+            )}
+          </>
+        )}
         <p className="text-xs text-almi-text-muted">
-          This is a practice estimate against the level&apos;s criteria, not an official UDI or Ministry result.
+          {goalCefr ? (
+            <>
+              Citizenship asks for {goalCefr} in the oral part only — confirm your own case
+              with UDI. This is a practice estimate, not an official Norskprøven result.
+            </>
+          ) : (
+            <>
+              Norskprøven has no pass mark: it reports the level you reach in each skill.
+              This is a practice estimate from the tasks you were served, not an official
+              Norskprøven result.
+            </>
+          )}
         </p>
         <button
           type="button"

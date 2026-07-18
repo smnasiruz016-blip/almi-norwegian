@@ -5,6 +5,7 @@ import type {
   NorwegianExam,
   NorwegianSkill,
   NorwegianTaskType,
+  CefrLevel,
   ObjectiveAnswer,
 } from "@/lib/no/types";
 
@@ -14,6 +15,10 @@ export interface RunnerItem {
   exam: NorwegianExam;
   skill: NorwegianSkill;
   taskType: NorwegianTaskType;
+  /** CEFR level this task is pitched at — carried so the runner can band a goal skill
+   *  from at-goal tasks only, report the level reached where there is no pass mark,
+   *  and let the productive grader judge at the right level. */
+  cefr?: CefrLevel;
   payload: unknown;
   answer: ObjectiveAnswer | null;
   maxPoints: number;
@@ -80,6 +85,9 @@ export async function gradeProductive(body: {
   exam: NorwegianExam;
   skill: NorwegianSkill;
   taskType: NorwegianTaskType;
+  /** The level THIS task is pitched at — the grade route judges the answer at this
+   *  level (via almi-data levelInstruction), never at the exam's "B1–B2" label. */
+  cefr?: CefrLevel;
   title: string;
   prompt: string;
   criteria: string[];
