@@ -60,7 +60,7 @@
     "title": "Letter from the municipality",
     "prompt": "Read the official letter and choose the correct answer.",
     "payload": {
-      "passage": "Kjære innbygger. Vi skriver til deg fordi du har søkt om nytt helsetrygdekort. Kortet er nå på vei med posten og bør være framme innen ti virkedager. Dersom kortet ikke har kommet etter to uker, ber vi deg kontakte oss på telefon eller møte opp på servicetorget. Det gamle kortet ditt er fortsatt gyldig helt til du får det nye.",
+      "passage": "Kjære innbygger. Vi skriver til deg fordi du har søkt om beboerparkering i bydelen din. Kortet er nå på vei med posten og bør være framme innen ti virkedager. Dersom kortet ikke har kommet etter to uker, ber vi deg kontakte oss på telefon eller møte opp på servicetorget. Det gamle kortet ditt er fortsatt gyldig helt til du får det nye.",
       "question": "Hva skal innbyggeren gjøre hvis kortet ikke kommer innen to uker?",
       "options": ["Vente en måned til", "Kontakte kommunen", "Søke om kortet på nytt på nett", "Kaste det gamle kortet"]
     },
