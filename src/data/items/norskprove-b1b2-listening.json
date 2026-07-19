@@ -214,9 +214,9 @@
     "title": "Match departments to tasks",
     "prompt": "Match each person to the department that can help them.",
     "payload": {
-      "transcript": "Velkommen til kommunens sentralbord. Vi hjelper deg videre. Har du spørsmål om skatt og betaling, skal du snakke med økonomiavdelingen. Handler det om boligen din og husleie, hjelper boligkontoret deg. Og trenger du hjelp til å søke jobb, setter vi deg over til NAV.",
+      "transcript": "Velkommen til kommunens sentralbord. Vi hjelper deg videre. Har du spørsmål om en kommunal faktura eller kommunale avgifter, skal du snakke med økonomiavdelingen. Handler det om boligen din og husleie, hjelper boligkontoret deg. Og trenger du hjelp til å søke jobb, setter vi deg over til NAV.",
       "instructions": "Koble hver innbygger til den riktige avdelingen.",
-      "left": ["En innbygger som har spørsmål om husleia si", "En innbygger som leter etter arbeid", "En innbygger som har et spørsmål om skatt"],
+      "left": ["En innbygger som har spørsmål om husleia si", "En innbygger som leter etter arbeid", "En innbygger som lurer på en kommunal faktura"],
       "right": ["NAV", "Økonomiavdelingen", "Boligkontoret"]
     },
     "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 0], [2, 1]] },
