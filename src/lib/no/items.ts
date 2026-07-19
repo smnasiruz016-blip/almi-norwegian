@@ -14,6 +14,7 @@ import type {
   NorwegianSkill,
   NorwegianTaskType,
   NorwegianDifficulty,
+  CefrLevel,
   ObjectiveAnswer,
 } from "./types";
 
@@ -24,6 +25,10 @@ export interface NorwegianItemSeed {
   skill: NorwegianSkill;
   taskType: NorwegianTaskType;
   difficulty: NorwegianDifficulty;
+  /** The CEFR level this task is pitched at (optional). Feeds the goal band where a
+   *  skill has a pass mark, and the achieved-level readout where it does not. Absent =
+   *  UNDECLARED: never counted toward a level, never silently treated as at-goal. */
+  cefr?: CefrLevel;
   title: string;
   prompt: string;
   payload: unknown;

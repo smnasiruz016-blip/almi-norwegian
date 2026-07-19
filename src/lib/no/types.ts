@@ -40,6 +40,16 @@ export type NorwegianTaskType =
 
 export type NorwegianDifficulty = "FOUNDATION" | "CORE" | "STRETCH";
 
+// The CEFR level a single task is PITCHED at — distinct from `difficulty`, which is a
+// FOUNDATION/CORE/STRETCH ladder *inside* an exam and crosses levels freely. Level is
+// what both readouts key on; difficulty is only for ordering/variety. Optional: an
+// untagged task is UNDECLARED and never silently counted toward a level.
+//
+// Norwegian leans on this harder than its siblings. Norskprøven has NO pass mark — it
+// reports the level you REACH in each skill — so for most skills there is nothing to
+// band against and the level tag IS the result, not a step toward one.
+export type { CefrLevel } from "@smnasiruz016-blip/almi-data";
+
 export const OBJECTIVE_TASK_TYPES: NorwegianTaskType[] = [
   "MCQ_SINGLE",
   "MATCHING",

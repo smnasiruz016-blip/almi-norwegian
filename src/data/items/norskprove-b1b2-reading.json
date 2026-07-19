@@ -5,6 +5,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Library opening hours",
     "prompt": "Read the notice and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Job advertisement",
     "prompt": "Read the job ad and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Opinion on cycling",
     "prompt": "Read the opinion piece and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Letter from the municipality",
     "prompt": "Read the official letter and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Working from home",
     "prompt": "Read the article and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Recycling rules",
     "prompt": "Read the information and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Parental leave",
     "prompt": "Decide whether the statement is true or false according to the text.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Evening class",
     "prompt": "Decide whether the statement is true or false according to the text.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Volunteering",
     "prompt": "Decide whether the statement is true or false according to the text.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Match people to courses",
     "prompt": "Match each person to the most suitable course.",
     "payload": {
@@ -166,6 +176,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Match signs to places",
     "prompt": "Match each sign to the place where you would see it.",
     "payload": {
@@ -183,6 +194,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Match questions to answers",
     "prompt": "Match each question to the correct answer from the guide.",
     "payload": {
@@ -200,6 +212,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Weather and clothing",
     "prompt": "Choose the correct word for each gap.",
     "payload": {
@@ -218,6 +231,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "A new colleague",
     "prompt": "Choose the correct word for each gap.",
     "payload": {
@@ -236,6 +250,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Healthy habits",
     "prompt": "Choose the correct word for each gap.",
     "payload": {

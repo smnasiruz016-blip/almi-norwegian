@@ -5,6 +5,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Train announcement",
     "prompt": "Listen to the announcement and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Doctor's appointment",
     "prompt": "Listen to the conversation and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Radio interview on food waste",
     "prompt": "Listen to the interview and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Message about a package",
     "prompt": "Listen to the voicemail and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Colleague asks a favour",
     "prompt": "Listen to the workplace conversation and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Weather forecast",
     "prompt": "Listen to the forecast and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Interview about learning Norwegian",
     "prompt": "Listen to the interview and choose the correct answer.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "School information meeting",
     "prompt": "Decide whether the statement is true or false according to the recording.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Gym membership",
     "prompt": "Decide whether the statement is true or false according to the recording.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "B2",
     "title": "Podcast on sleep",
     "prompt": "Decide whether the statement is true or false according to the recording.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Neighbour's request",
     "prompt": "Decide whether the statement is true or false according to the recording.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Match speakers to opinions",
     "prompt": "Match each speaker to the opinion they express.",
     "payload": {
@@ -198,6 +210,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Match departments to tasks",
     "prompt": "Match each person to the department that can help them.",
     "payload": {
@@ -215,6 +228,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Match hobbies to reasons",
     "prompt": "Match each person to the reason they give for their hobby.",
     "payload": {
@@ -232,6 +246,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "B1",
     "title": "Match announcements to places",
     "prompt": "Match each announcement to the place where you would hear it.",
     "payload": {

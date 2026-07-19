@@ -11,6 +11,7 @@ import type {
   KnowledgeExam,
   NorwegianSkill,
   LanguageSkill,
+  CefrLevel,
 } from "./types";
 
 export interface ExamMeta {
@@ -19,6 +20,19 @@ export interface ExamMeta {
   slug: string; // URL slug
   name: string; // display name (official Norwegian exam name)
   cefr: string; // CEFR level label, or "Knowledge test" for the MCQ tests
+  // The level a learner's readiness is banded against, PER SKILL.
+  //
+  // Every other sibling carries one goal for the whole exam. Norway cannot: the
+  // citizenship language requirement is B1 in ORAL only — reading, listening and
+  // writing carry NO citizenship pass at all. A single exam-wide goal here would
+  // invent a standard for three skills that do not have one, which is exactly the
+  // failure the level work exists to stop. So the goal is a sparse map: a skill
+  // absent from it has no pass mark, and its runner reports the level REACHED
+  // instead of a readiness band (see achievedReadout in grading.ts).
+  //
+  // Note this is NOT derived from `cefr`: "B1–B2" is the name of the paper you sit
+  // and the span it can report — it is not a standard to be collapsed into a goal.
+  goalBySkill?: Partial<Record<LanguageSkill, CefrLevel>>;
   blurb: string; // one-line description
   skills: NorwegianSkill[];
   knowledge?: boolean; // true = society/citizenship MCQ test (single KNOWLEDGE module)
@@ -74,7 +88,11 @@ export const LANGUAGE_EXAMS: ExamMeta[] = [
   },
   {
     exam: "NORSKPROVE_B1B2", track: "CITIZENSHIP", slug: "norskprove-b1b2", name: "Norskprøven B1–B2", cefr: "B1–B2",
-    blurb: "The B1–B2 Norwegian exam commonly required for Norwegian citizenship — Reading, Written Presentation and Speaking.",
+    // Citizenship asks for B1 in ORAL only (raised from A2 on 1 Oct 2022). The other
+    // three skills are sat and reported, but carry no citizenship pass mark — so they
+    // get no goal here rather than a borrowed one.
+    goalBySkill: { SPEAKING: "B1" },
+    blurb: "The B1–B2 Norwegian exam taken on the citizenship path — Reading, Listening, Written Presentation and Speaking. Citizenship asks for B1 in the oral part; confirm your own case with UDI.",
     skills: ["READING", "LISTENING", "WRITING", "SPEAKING"], lead: true, mockMinutes: 240,
   },
   {
