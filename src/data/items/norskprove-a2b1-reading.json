@@ -24,7 +24,7 @@
     "title": "Letter from the barnehage",
     "prompt": "Read the letter and choose the correct answer.",
     "payload": {
-      "passage": "Hei Amina. Datteren din Sara begynner i barnehagen Løvetann den 1. august. Den første dagen må du møte klokka 09 sammen med henne. Ta gjerne med skiftetøy og en matpakke. Hvis Sara er syk, må du ringe til barnehagen før klokka 08.",
+      "passage": "Hei Amina. Datteren din Sara begynner i barnehagen den 1. august. Den første dagen må du møte klokka 09 sammen med henne. Ta gjerne med skiftetøy og en matpakke. Hvis Sara er syk, må du ringe til barnehagen før klokka 08.",
       "question": "Hva må Amina gjøre hvis Sara blir syk?",
       "options": ["Sende en e-post til kommunen", "Møte klokka 09 likevel", "Ringe til barnehagen før klokka 08", "Ta med skiftetøy"]
     },
