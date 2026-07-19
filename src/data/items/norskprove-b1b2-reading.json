@@ -111,7 +111,7 @@
     "title": "Parental leave",
     "prompt": "Decide whether the statement is true or false according to the text.",
     "payload": {
-      "passage": "I Norge har både mødre og fedre rett til foreldrepermisjon når de får barn. Reglene er laget slik at foreldrene kan dele en stor del av permisjonen mellom seg. Tanken bak ordningen er at begge foreldrene skal få mulighet til å være tett på barnet den første tiden. Mange arbeidsplasser oppfordrer i dag også fedre til å ta ut en lengre del av permisjonen.",
+      "passage": "I Norge har både mødre og fedre rett til foreldrepermisjon når de får barn. Reglene er laget slik at foreldrene kan dele en stor del av permisjonen mellom seg. Tanken bak ordningen er at begge foreldrene skal få mulighet til å være tett på barnet den første tiden. Mange arbeidsplasser oppfordrer i dag også fedre til å ta ut en lengre del av permisjonen. Hvor mye hver av foreldrene kan ta ut, avhenger av situasjonen deres, og det er NAV som avgjør hva som gjelder i det enkelte tilfellet.",
       "question": "Ifølge teksten har bare mødre rett til foreldrepermisjon i Norge.",
       "options": ["Sant", "Usant"]
     },
@@ -201,7 +201,7 @@
       "passage": "På nettsidene til kommunen finner du svar på mange praktiske spørsmål. Under ser du noen av spørsmålene innbyggerne oftest stiller, og svarene kommunen gir.",
       "instructions": "Koble hvert spørsmål til det riktige svaret.",
       "left": ["Når henter renovasjonsbilen søpla?", "Hvordan melder jeg flytting?", "Kan jeg få hjelp til å lese et brev fra det offentlige?"],
-      "right": ["Ja, kom innom servicetorget, så hjelper vi deg.", "Det gjør du enkelt på norge.no med BankID.", "Annenhver torsdag i partallsuker."]
+      "right": ["Ja, kom innom servicetorget, så hjelper vi deg.", "Det melder du til folkeregisteret på skatteetaten.no.", "Annenhver torsdag i partallsuker."]
     },
     "answer": { "type": "MATCHING", "pairs": [[0, 2], [1, 1], [2, 0]] },
     "maxPoints": 3
