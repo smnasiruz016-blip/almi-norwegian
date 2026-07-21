@@ -39,5 +39,5 @@ show("JOBS SAMPLE", buildJobsPage(
   resolveOriginBlock(COUNTRY_BY_SLUG.get("india")!),
 ));
 
-// Sample 3 — LEVEL: Prøve i Dansk 3 (B1–B2) — the citizenship language exam (the lead)
-show("LEVEL SAMPLE (Prøve i Dansk 3)", buildLevelPage(LANGUAGE_EXAMS[2]));
+// Sample 3 — LEVEL: Norskprøven B1–B2 — the citizenship language exam (the lead)
+show("LEVEL SAMPLE (Norskprøven B1–B2)", buildLevelPage(LANGUAGE_EXAMS[2]));
