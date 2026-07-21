@@ -31,11 +31,11 @@ show("STUDY SAMPLE", buildStudyPage(
   resolveOriginBlock(COUNTRY_BY_SLUG.get("nigeria")!),
 ));
 
-// Sample 2 — JOBS: Registered Nurse, from India, Copenhagen
+// Sample 2 — JOBS: Registered Nurse, from India, Oslo
 show("JOBS SAMPLE", buildJobsPage(
   ROLE_BY_SLUG.get("registered-nurse")!,
   COUNTRY_BY_SLUG.get("india")!,
-  HUB_BY_SLUG.get("copenhagen")!,
+  HUB_BY_SLUG.get("oslo")!,
   resolveOriginBlock(COUNTRY_BY_SLUG.get("india")!),
 ));
 
