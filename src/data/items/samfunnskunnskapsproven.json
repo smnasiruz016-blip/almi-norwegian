@@ -254,5 +254,405 @@
     },
     "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
     "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Ny innvandrer i Norge",
+    "title": "UDI og oppholdstillatelse",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvilken myndighet behandler søknader om oppholdstillatelse og statsborgerskap?",
+      "options": ["UDI (Utlendingsdirektoratet)", "NAV", "Skatteetaten", "Politiet"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Ny innvandrer i Norge",
+    "title": "Folkeregisteret",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hos hvilken myndighet er du registrert med bostedsadresse (folkeregisteret)?",
+      "options": ["Skatteetaten", "NAV", "UDI", "Kommunelegen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Ny innvandrer i Norge",
+    "title": "Introduksjonsprogrammet",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er introduksjonsprogrammet?",
+      "options": ["Et program som hjelper nyankomne flyktninger med norsk og samfunnskunnskap for å komme i arbeid", "En pensjonsordning", "Et lån fra banken", "En helseforsikring"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Ny innvandrer i Norge",
+    "title": "Melde flytting",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva må du gjøre når du flytter til en ny adresse i Norge?",
+      "options": ["Melde flytting til folkeregisteret (Skatteetaten)", "Ringe politiet", "Betale en avgift til UDI", "Ingenting"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Ny innvandrer i Norge",
+    "title": "Biblioteket",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvor kan du få gratis lån av bøker og tilgang til internett og hjelp?",
+      "options": ["På biblioteket", "På politistasjonen", "På sykehuset", "Hos UDI"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Barn og familie",
+    "title": "Vold mot barn er forbudt",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Er det lov å slå barn som en del av oppdragelsen i Norge?",
+      "options": ["Ja, hvis barnet er lite", "Nei, det er forbudt", "Bare far har lov", "Ja, på skolen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Barn og familie",
+    "title": "Barnetrygd",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er barnetrygd?",
+      "options": ["Penger foreldre får for å ha barn", "En skatt på barn", "En forsikring for eldre", "Et lån til barnehage"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Barn og familie",
+    "title": "Foreldrepenger",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er foreldrepenger?",
+      "options": ["Penger foreldre får når de er hjemme med et nyfødt barn", "Lommepenger til barn", "En bot for foreldre", "Skolepenger"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Barn og familie",
+    "title": "Barnevernet",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvilken instans skal gripe inn hvis et barn ikke har det trygt hjemme?",
+      "options": ["Barnevernet", "Skatteetaten", "UDI", "Fagforeningen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Barn og familie",
+    "title": "Rett til barnehageplass",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Fra hvilken alder har barn rett til plass i barnehage i Norge?",
+      "options": ["Fra 1 år", "Fra 3 år", "Fra 6 år", "Fra fødselen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Helse",
+    "title": "Fastlegen",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er en fastlege?",
+      "options": ["En fast allmennlege du er knyttet til", "En lege på sykehuset", "En tannlege", "En lege bare for barn"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Helse",
+    "title": "Legevakt 116117",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvilket nummer ringer du til legevakten når det haster, men ikke er livstruende?",
+      "options": ["113", "116117", "110", "1177"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Helse",
+    "title": "Tannlege for voksne",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Er tannlege for voksne gratis i Norge?",
+      "options": ["Ja, helt gratis", "Nei, voksne betaler selv", "Bare for menn", "Bare i akutte tilfeller"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Helse",
+    "title": "Egenandel og frikort",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er en egenandel i helsevesenet?",
+      "options": ["Et beløp du selv betaler, opp til et frikort-tak", "En gratis medisin", "En skatt til kommunen", "En bot"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Helse",
+    "title": "Apotek og resept",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvor henter du medisiner som legen har skrevet ut på resept?",
+      "options": ["På et apotek", "På biblioteket", "Hos NAV", "På posten"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Utdanning og kompetanse",
+    "title": "Gratis grunnskole",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Er den offentlige grunnskolen gratis i Norge?",
+      "options": ["Ja", "Nei", "Bare for norske statsborgere", "Bare barneskolen"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Utdanning og kompetanse",
+    "title": "Skolestartalder",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Fra hvilken alder begynner barn vanligvis på skolen i Norge?",
+      "options": ["5 år", "6 år", "7 år", "8 år"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Utdanning og kompetanse",
+    "title": "Videregående opplæring",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva kommer etter grunnskolen (frivillig, men en rett man har)?",
+      "options": ["Videregående opplæring", "Barnehage", "Introduksjonsprogram", "Militæret"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Utdanning og kompetanse",
+    "title": "Norskopplæring for voksne",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Har voksne innvandrere rett til opplæring i norsk og samfunnskunnskap?",
+      "options": ["Ja, gjennom voksenopplæringen", "Nei", "Bare barn har rett", "Bare hvis de betaler selv"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbeidsliv",
+    "title": "Arbeidsavtale",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva bør du alltid ha skriftlig når du begynner i en ny jobb?",
+      "options": ["En arbeidsavtale (arbeidskontrakt)", "Et pass", "Et bankkort", "En legeerklæring"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbeidsliv",
+    "title": "Skattekort",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er et skattekort?",
+      "options": ["Et dokument fra Skatteetaten som viser hvor mye skatt arbeidsgiver skal trekke", "Et medlemskort i en fagforening", "Et bankkort", "Et helsekort"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbeidsliv",
+    "title": "Ferie etter ferieloven",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvor mange ukers ferie har man vanligvis krav på etter ferieloven?",
+      "options": ["1 uke", "2 uker", "4 uker og 1 dag", "8 uker"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbeidsliv",
+    "title": "Sykmelding",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva må du gjøre hvis du blir syk over lengre tid og ikke kan jobbe?",
+      "options": ["Skaffe sykmelding fra lege og gi beskjed til arbeidsgiver", "Bare slutte å møte opp", "Betale arbeidsgiveren", "Ringe politiet"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbeidsliv",
+    "title": "Fagforening",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er en fagforening?",
+      "options": ["En organisasjon som arbeider for arbeidstakernes rettigheter", "En statlig myndighet", "En bank", "En skole"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbeidsliv",
+    "title": "HMS på arbeidsplassen",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva betyr HMS på en arbeidsplass?",
+      "options": ["Helse, miljø og sikkerhet", "Høyere månedlig skatt", "Hjelp med søknad", "Husleie, mat og strøm"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
   }
 ]

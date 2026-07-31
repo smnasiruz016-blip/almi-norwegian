@@ -254,5 +254,21 @@
     },
     "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
     "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Barn og familie",
+    "title": "Foreldrenes like rettigheter",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Har mor og far like rettigheter til felles barn etter norsk lov?",
+      "options": ["Ja, de har like rettigheter", "Nei, bare far", "Nei, bare mor", "Bare hvis de er gift"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
   }
 ]
