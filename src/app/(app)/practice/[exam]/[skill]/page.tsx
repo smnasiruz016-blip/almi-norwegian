@@ -9,7 +9,7 @@ import { hasPaidAccess } from "@/lib/billing/plans";
 import { examBySlug, SKILL_LABELS } from "@/lib/no/registry";
 import { isFreeSkill } from "@/lib/no/types";
 import type { NorwegianSkill } from "@/lib/no/types";
-import { pickPractice } from "@/lib/no/items";
+import { pickPractice, stableItemId } from "@/lib/no/items";
 import { PracticeRunner } from "@/components/no/PracticeRunner";
 import { ProductiveComposer } from "@/components/no/ProductiveComposer";
 
@@ -66,6 +66,10 @@ export default async function SkillRunnerPage({
           skill={skill}
           goalCefr={exam.goalBySkill?.[skill as keyof typeof exam.goalBySkill]}
           items={items.map((it) => ({
+            // The answer key is NOT mapped here — see RunnerItem in components/no/shared.ts.
+            // Everything this object holds is rendered to the learner; anything added to it
+            // ships in the page payload.
+            id: stableItemId(it),
             title: it.title,
             prompt: it.prompt,
             exam: it.exam,
@@ -73,7 +77,6 @@ export default async function SkillRunnerPage({
             taskType: it.taskType,
             cefr: it.cefr,
             payload: it.payload,
-            answer: it.answer,
             maxPoints: it.maxPoints,
           }))}
         />
@@ -82,6 +85,7 @@ export default async function SkillRunnerPage({
           examName={exam.name}
           skill={skill}
           items={items.map((it) => ({
+            id: stableItemId(it),
             title: it.title,
             prompt: it.prompt,
             exam: it.exam,

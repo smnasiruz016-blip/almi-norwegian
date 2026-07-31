@@ -19,7 +19,7 @@ import {
 } from "@/lib/no/grading";
 import { SKILL_LABELS } from "@/lib/no/registry";
 import { ObjectiveTask } from "./ObjectiveTask";
-import { submitAttempt, type RunnerItem } from "./shared";
+import { submitMockAttempt, type RunnerItem } from "./shared";
 
 export interface MockSection {
   skill: NorwegianSkill;
@@ -82,12 +82,9 @@ export function MockRunner({
 
     for (const f of flat) {
       if (f.objective) {
-        const g = await submitAttempt({
-          exam: f.item.exam,
-          skill: f.item.skill,
-          taskType: f.item.taskType,
-          answer: f.item.answer,
-          maxPoints: f.item.maxPoints,
+        // Mock route: same server-authoritative grading, no key in the reply.
+        const g = await submitMockAttempt({
+          itemId: f.item.id,
           response: responses[f.index] ?? null,
         });
         const points = g?.points ?? 0;
@@ -100,10 +97,8 @@ export function MockRunner({
           (prodPct[f.skill] ??= []).push(RATING_PCT[r] ?? 40);
         }
         // Persist the productive attempt (best-effort, gated server-side).
-        await submitAttempt({
-          exam: f.item.exam,
-          skill: f.item.skill,
-          taskType: f.item.taskType,
+        await submitMockAttempt({
+          itemId: f.item.id,
           response: { text: texts[f.index] ?? "" },
           selfScore: r ?? null,
         });

@@ -6,6 +6,7 @@
 // throwing. Files are read from disk at module load (Node runtime) so we don't
 // need every bundle to exist at build/tsc time.
 
+import crypto from "crypto";
 import fs from "fs";
 import path from "path";
 import type {
@@ -96,6 +97,92 @@ export function getItems(filter: {
       (filter.exam === undefined || it.exam === filter.exam) &&
       (filter.skill === undefined || it.skill === filter.skill),
   );
+}
+
+// ── SERVER-SIDE ITEM IDENTITY ───────────────────────────────────────────────
+// Items are bundle-served with NO database id, but grading must be server-authoritative:
+// the submit route re-loads the item by id and grades against the SERVER-held answer
+// key, so the key never ships in the served payload and a client-supplied answer is
+// never trusted. Before this existed, /api/no/submit destructured `answer` off the
+// request body and passed it to gradeObjective() — a forged POST that supplied both the
+// key and the matching response scored 100% without knowing anything.
+//
+// ── WHY A CONTENT HASH AND NOT THE SWISS TUPLE ──
+// almi-swiss keys on language|track|exam|skill|title, because there a title is unique
+// within a surface. That tuple DOES NOT HOLD HERE and copying it would have been a
+// silent mis-grade: measured across all 272 authored items, exam|skill|title collides 3
+// times, and adding `track` or `taskType` does not separate them —
+//
+//   BERGENSTEST|WRITING|Summary of a research finding    (productive.json vs -2.json)
+//   NORSKPROVE_A1A2|SPEAKING|Talk about your family      "…out loud." vs "…in Norwegian."
+//   NORSKPROVE_A1A2|SPEAKING|Ask for directions          "…to a place in town." vs "…in Norwegian."
+//
+// These are DISTINCT tasks that happen to share a title, not duplicates, so the fix is a
+// wider id — never a retitle. Hashing the prompt and payload in as well separates all
+// three: 272/272 unique. assertNoIdCollisions() keeps that true as content is added.
+//
+// `answer`, `cefr` and `difficulty` are deliberately NOT hashed. The id names the
+// QUESTION, not its key or its tagging, so a de-game re-key pass or a CEFR tagging pass
+// leaves every id untouched. The trade, stated rather than implied: editing a title,
+// prompt or payload DOES change that item's id. That is safe here because the id is a
+// round-trip handle (served with the item, posted straight back) and is never persisted
+// as a foreign key that has to survive — NorwegianAttempt.itemId points at NorwegianItem,
+// a table nothing populates, so that write already fails into its own catch.
+
+/** Stable, content-derived id for a bundle item — the handle the client posts back. */
+export function stableItemId(
+  it: Pick<NorwegianItemSeed, "exam" | "skill" | "taskType" | "title" | "prompt" | "payload">,
+): string {
+  return crypto
+    .createHash("sha256")
+    .update(
+      JSON.stringify({
+        exam: it.exam,
+        skill: it.skill,
+        taskType: it.taskType,
+        title: it.title,
+        prompt: it.prompt,
+        payload: it.payload,
+      }),
+    )
+    .digest("hex")
+    .slice(0, 16);
+}
+
+/** Re-load the full item (INCLUDING its answer key) by its stable id, server-side. */
+export function getItemById(id: string): NorwegianItemSeed | undefined {
+  return allItems().find((it) => stableItemId(it) === id);
+}
+
+/** The collision check as a PURE function over any item list, so the gate can be shown
+ *  RED against a synthetic duplicate without ever editing an authored bundle. Returns
+ *  one human-readable line per colliding pair; empty means clean. */
+export function findIdCollisions(items: readonly NorwegianItemSeed[]): string[] {
+  const seen = new Map<string, string>();
+  const out: string[] = [];
+  for (const it of items) {
+    const id = stableItemId(it);
+    const key = `${it.exam}|${it.skill}|${it.taskType}|${it.title}`;
+    const prior = seen.get(id);
+    if (prior) {
+      out.push(`"${key}" and "${prior}" both hash to ${id} — grading would key against the wrong item`);
+      continue;
+    }
+    seen.set(id, key);
+  }
+  return out;
+}
+
+/**
+ * Build-time guard: no two bundle items may share a stable id. A collision would make
+ * getItemById() return the wrong item, so the submit route would grade a learner's
+ * answer against a DIFFERENT item's key — silently, and only for the colliding pair.
+ */
+export function assertNoIdCollisions(): void {
+  const collisions = findIdCollisions(allItems());
+  if (collisions.length > 0) {
+    throw new Error(`stableItemId collision:\n  ${collisions.join("\n  ")}`);
+  }
 }
 
 /**
