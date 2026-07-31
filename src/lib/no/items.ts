@@ -16,6 +16,7 @@ import type {
   NorwegianTaskType,
   NorwegianDifficulty,
   CefrLevel,
+  NorwegianCivicsArea,
   ObjectiveAnswer,
 } from "./types";
 
@@ -30,6 +31,13 @@ export interface NorwegianItemSeed {
    *  skill has a pass mark, and the achieved-level readout where it does not. Absent =
    *  UNDECLARED: never counted toward a level, never silently treated as at-goal. */
   cefr?: CefrLevel;
+  /** For KNOWLEDGE items only: which of the seven 50-hour samfunnskunnskap emner this
+   *  question belongs to. Optional because the language skills have no such syllabus —
+   *  absent on every READING/LISTENING/WRITING/SPEAKING item by design, and present on
+   *  every civics item, which is what makes per-emne coverage measurable rather than
+   *  merely describable. NOT part of stableItemId: keying an item to its emne is
+   *  classification, not a change to the question, so it must not move the id. */
+  area?: NorwegianCivicsArea;
   title: string;
   prompt: string;
   payload: unknown;
@@ -110,8 +118,8 @@ export function getItems(filter: {
 // ── WHY A CONTENT HASH AND NOT THE SWISS TUPLE ──
 // almi-swiss keys on language|track|exam|skill|title, because there a title is unique
 // within a surface. That tuple DOES NOT HOLD HERE and copying it would have been a
-// silent mis-grade: measured across all 272 authored items, exam|skill|title collides 3
-// times, and adding `track` or `taskType` does not separate them —
+// silent mis-grade: across the authored bank exam|skill|title collides 3 times (measured
+// at 272 items, still 3 at 298), and adding `track` or `taskType` does not separate them —
 //
 //   BERGENSTEST|WRITING|Summary of a research finding    (productive.json vs -2.json)
 //   NORSKPROVE_A1A2|SPEAKING|Talk about your family      "…out loud." vs "…in Norwegian."

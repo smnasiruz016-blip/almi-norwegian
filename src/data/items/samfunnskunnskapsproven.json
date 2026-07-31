@@ -5,6 +5,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Ny innvandrer i Norge",
     "title": "Emergency services",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -20,6 +21,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Ny innvandrer i Norge",
     "title": "Fire and ambulance numbers",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -35,6 +37,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Local government",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -50,6 +53,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
     "title": "The welfare state",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -65,6 +69,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
     "title": "National insurance scheme",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -80,6 +85,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Labour and welfare administration",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -95,6 +101,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Arbeidsliv",
     "title": "The tax authority",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -110,6 +117,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Helse",
     "title": "Healthcare access",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -125,6 +133,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Utdanning og kompetanse",
     "title": "Compulsory education",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -140,6 +149,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Barn og familie",
     "title": "Gender equality",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -155,6 +165,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Local elections",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -170,6 +181,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Arbeidsliv",
     "title": "The labour market model",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -185,6 +197,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Ny innvandrer i Norge",
     "title": "Personal identification",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -200,6 +213,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Freedom of expression",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -215,6 +229,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Regional government",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -230,6 +245,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Arbeidsliv",
     "title": "Paying tax",
     "prompt": "Choose the correct answer.",
     "payload": {

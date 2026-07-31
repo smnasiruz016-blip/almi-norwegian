@@ -5,6 +5,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Historie, geografi og levesett",
     "title": "The capital of Norway",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -20,6 +21,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
     "title": "The Norwegian constitution",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -35,6 +37,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
     "title": "The Norwegian parliament",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -50,6 +53,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Seats in the Storting",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -65,6 +69,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Form of government",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -80,6 +85,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
     "title": "The reigning monarch",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -95,6 +101,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Historie, geografi og levesett",
     "title": "National day",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -110,6 +117,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Historie, geografi og levesett",
     "title": "Dissolution of the union with Sweden",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -125,6 +133,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Historie, geografi og levesett",
     "title": "The written languages",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -140,6 +149,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "area": "Historie, geografi og levesett",
     "title": "The indigenous people",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -155,6 +165,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Historie, geografi og levesett",
     "title": "Occupation during the Second World War",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -170,6 +181,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "area": "Historie, geografi og levesett",
     "title": "Oil in the North Sea",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -185,6 +197,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Historie, geografi og levesett",
     "title": "The national currency",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -200,6 +213,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Elections and democracy",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -215,6 +229,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Norway and the European Union",
     "prompt": "Choose the correct answer.",
     "payload": {
@@ -230,6 +245,7 @@
     "skill": "KNOWLEDGE",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "area": "Demokrati og velferdssamfunn",
     "title": "Head of government",
     "prompt": "Choose the correct answer.",
     "payload": {

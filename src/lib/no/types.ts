@@ -50,6 +50,36 @@ export type NorwegianDifficulty = "FOUNDATION" | "CORE" | "STRETCH";
 // band against and the level tag IS the result, not a step toward one.
 export type { CefrLevel } from "@smnasiruz016-blip/almi-data";
 
+/**
+ * The seven emner of the 50-hour samfunnskunnskap course — the syllabus both knowledge
+ * tests are drawn from (forskrift 2012-04-19-358, Lovdata).
+ *
+ * This is the product's civics taxonomy, and it is a TAXONOMY rather than a label list:
+ * every KNOWLEDGE item carries one, so "which parts of the syllabus does this bank
+ * actually cover, and how deeply" is a question the data can answer. Before it existed
+ * the civics items carried no topic of any kind — 32 bare titles with no denominator, so
+ * coverage could be described but never measured.
+ *
+ * It is deliberately the OFFICIAL list and not one derived from what happens to be
+ * authored: a taxonomy invented from the items it is meant to audit can never report a
+ * gap, because every item lands in a bucket that exists only because that item exists.
+ */
+export const CIVICS_AREAS = [
+  "Ny innvandrer i Norge",
+  "Historie, geografi og levesett",
+  "Barn og familie",
+  "Helse",
+  "Utdanning og kompetanse",
+  "Arbeidsliv",
+  "Demokrati og velferdssamfunn",
+] as const;
+
+export type NorwegianCivicsArea = (typeof CIVICS_AREAS)[number];
+
+export function isCivicsArea(v: unknown): v is NorwegianCivicsArea {
+  return typeof v === "string" && (CIVICS_AREAS as readonly string[]).includes(v);
+}
+
 export const OBJECTIVE_TASK_TYPES: NorwegianTaskType[] = [
   "MCQ_SINGLE",
   "MATCHING",
