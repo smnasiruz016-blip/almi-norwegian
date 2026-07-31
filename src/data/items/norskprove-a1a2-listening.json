@@ -5,6 +5,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Where is Thomas from",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Shop opening time",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Ordering at a café",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Train platform",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "A2",
     "title": "My brother's age",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Weekend visit",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Weather tomorrow",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Shop hours",
     "prompt": "Listen. Is the statement true (Sant) or false (Usant)?",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Kari at work",
     "prompt": "Listen. Is the statement true (Sant) or false (Usant)?",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "The apartment",
     "prompt": "Listen. Is the statement true (Sant) or false (Usant)?",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "The bus to the centre",
     "prompt": "Listen. Is the statement true (Sant) or false (Usant)?",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "People and jobs",
     "prompt": "Listen and match each person with their job.",
     "payload": {
@@ -198,6 +210,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "A2",
     "title": "Food and prices",
     "prompt": "Listen and match each item with its price.",
     "payload": {
@@ -215,6 +228,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Events and times",
     "prompt": "Listen and match each event with its time.",
     "payload": {
@@ -232,6 +246,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "A2",
     "title": "Days and weather",
     "prompt": "Listen and match each day with the weather.",
     "payload": {

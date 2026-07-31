@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Cancel a doctor's appointment",
     "prompt": "Write a short message in Norwegian based on the situation.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Note to a neighbour about noise",
     "prompt": "Write a short note in Norwegian based on the situation.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Ask the library for help",
     "prompt": "Write a short email in Norwegian based on the situation.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Message to your child's school",
     "prompt": "Write a short message in Norwegian based on the situation.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Swap a work shift",
     "prompt": "Write a short message in Norwegian based on the situation.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Report a problem to the housing cooperative",
     "prompt": "Write a short email in Norwegian based on the situation.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Apply for a volunteer position",
     "prompt": "Write a short email in Norwegian based on the situation.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Shop at the pharmacy",
     "prompt": "Speak in Norwegian for at least one minute.",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Talk about a Norwegian tradition",
     "prompt": "Speak in Norwegian for at least one minute.",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Describe your family",
     "prompt": "Speak in Norwegian for at least one minute.",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Handle a problem at the supermarket",
     "prompt": "Speak in Norwegian for at least one minute.",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Explain how you learn Norwegian",
     "prompt": "Speak in Norwegian for at least one minute.",
     "payload": {
@@ -197,6 +209,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Give advice to a newcomer",
     "prompt": "Speak in Norwegian for at least one minute.",
     "payload": {
@@ -213,6 +226,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Discuss public transport",
     "prompt": "Speak in Norwegian for at least one minute.",
     "payload": {
@@ -229,6 +243,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Tell about a memorable day",
     "prompt": "Speak in Norwegian for at least one minute.",
     "payload": {

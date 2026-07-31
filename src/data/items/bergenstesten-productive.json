@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on free education",
     "prompt": "Write an argumentative essay defending a clear thesis.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Debate summary: AI at work",
     "prompt": "Summarise the two sides of a public debate objectively.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on the oil transition",
     "prompt": "Argue a position on the pace of Norway's petroleum transition.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on social media",
     "prompt": "Discuss the role of social media in public debate.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Summary of a research finding",
     "prompt": "Summarise and comment on a research finding.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on centralisation",
     "prompt": "Argue whether policy can counter regional imbalance.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on the welfare model",
     "prompt": "Evaluate the strengths and weaknesses of the welfare model.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Letter to the editor",
     "prompt": "Write a reasoned letter to the editor.",
     "payload": {
@@ -173,6 +181,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Defend a viewpoint: tuition",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -194,6 +203,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: AI",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -215,6 +225,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Defend a viewpoint: climate",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -236,6 +247,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Discuss social media",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -257,6 +269,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: welfare",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -278,6 +291,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Discuss the right to roam",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -299,6 +313,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Defend a viewpoint: research use",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {

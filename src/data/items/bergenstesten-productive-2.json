@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Analyse integration data",
     "prompt": "Analyse a data description and draw a conclusion.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on gene technology",
     "prompt": "Argue a position on the ethics of gene editing.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on English in academia",
     "prompt": "Discuss the use of English as the language of research.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Summarise a debate: health data",
     "prompt": "Summarise and evaluate a public debate.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on economic growth",
     "prompt": "Argue for or against continued growth as a goal.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Essay on the humanities",
     "prompt": "Evaluate the value of the humanities in society.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Summary of a research finding",
     "prompt": "Summarise and comment on a research finding.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Defend a viewpoint: basic income",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -173,6 +181,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: space funding",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -194,6 +203,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Defend a viewpoint: animal testing",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -215,6 +225,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Discuss privacy and surveillance",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -236,6 +247,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: art funding",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -257,6 +269,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Discuss studying abroad",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -278,6 +291,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Defend a viewpoint: press freedom",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {
@@ -299,6 +313,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Present a position: work-life balance",
     "prompt": "Present and defend an academic viewpoint.",
     "payload": {

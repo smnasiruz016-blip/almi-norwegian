@@ -5,6 +5,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Oil wealth and the future",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Dialects and identity",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "The right to roam",
     "prompt": "Read the article and choose the best answer.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Trust as capital",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Aquaculture dilemmas",
     "prompt": "Read the passage and choose the best answer.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Digital public services",
     "prompt": "Read the report summary and choose the best answer.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Volunteering claim",
     "prompt": "Decide whether the statement matches the passage.",
     "payload": {
@@ -147,6 +154,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Automation and work",
     "prompt": "Decide whether the statement matches the passage.",
     "payload": {
@@ -163,6 +171,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Peer review claim",
     "prompt": "Decide whether the statement matches the passage.",
     "payload": {
@@ -179,6 +188,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Concepts and definitions",
     "prompt": "Match each concept to its correct definition.",
     "payload": {
@@ -200,6 +210,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Rhetorical appeals",
     "prompt": "Match each rhetorical appeal to its description.",
     "payload": {
@@ -221,6 +232,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Parts of a research article",
     "prompt": "Match each part of a research article to its function.",
     "payload": {
@@ -242,6 +254,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Education and democracy",
     "prompt": "Choose the word that fits each gap.",
     "payload": {
@@ -260,6 +273,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Climate models",
     "prompt": "Choose the word that fits each gap.",
     "payload": {
@@ -278,6 +292,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "The welfare model",
     "prompt": "Choose the word that fits each gap.",
     "payload": {

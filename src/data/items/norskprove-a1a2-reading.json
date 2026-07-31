@@ -5,6 +5,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Introducing Kari",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Ola's family",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "At the shop",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Today's weather",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Morning routine",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Nora's job",
     "prompt": "Read the short text and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Per reads",
     "prompt": "Read the text. Is the statement true (Sant) or false (Usant)?",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "The Hansen house",
     "prompt": "Read the text. Is the statement true (Sant) or false (Usant)?",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Jonas goes to school",
     "prompt": "Read the text. Is the statement true (Sant) or false (Usant)?",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Questions and answers",
     "prompt": "Match each question with the correct answer.",
     "payload": {
@@ -166,6 +176,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Animal words",
     "prompt": "Match the Norwegian word with its English meaning.",
     "payload": {
@@ -183,6 +194,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Places and activities",
     "prompt": "Match each place with what you do there.",
     "payload": {
@@ -200,6 +212,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Name and home",
     "prompt": "Choose the correct word for each gap.",
     "payload": {
@@ -218,6 +231,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Meals of the day",
     "prompt": "Choose the correct word for each gap.",
     "payload": {
@@ -236,6 +250,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "STRETCH",
+    "cefr": "A2",
     "title": "A cold day",
     "prompt": "Choose the correct word for each gap.",
     "payload": {

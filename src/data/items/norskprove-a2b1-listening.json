@@ -5,6 +5,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Phone message from the dentist",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Train announcement",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "At the bakery",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Message from school",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Weather on the radio",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Job interview invitation",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Call to the kommune",
     "prompt": "Listen and choose the correct answer.",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Voicemail from a friend",
     "prompt": "Decide if the statement is true (Sant) or false (Usant).",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Supermarket announcement",
     "prompt": "Decide if the statement is true (Sant) or false (Usant).",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Colleague on the phone",
     "prompt": "Decide if the statement is true (Sant) or false (Usant).",
     "payload": {
@@ -165,6 +175,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Health message",
     "prompt": "Decide if the statement is true (Sant) or false (Usant).",
     "payload": {
@@ -181,6 +192,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Match speaker to weekend plan",
     "prompt": "Match each speaker to their weekend plan.",
     "payload": {
@@ -198,6 +210,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Match person to shopping item",
     "prompt": "Match each person to what they need to buy.",
     "payload": {
@@ -215,6 +228,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Match person to appointment",
     "prompt": "Match each person to their appointment this week.",
     "payload": {
@@ -232,6 +246,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Match colleague to room at work",
     "prompt": "Match each colleague to the room they work in.",
     "payload": {

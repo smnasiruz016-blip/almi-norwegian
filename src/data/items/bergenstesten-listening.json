@@ -5,6 +5,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture on memory",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Debate on tuition",
     "prompt": "Listen to the debate excerpt and choose the best answer.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Seminar on sleep",
     "prompt": "Listen to the seminar excerpt and choose the best answer.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Lecture on the Sami languages",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Talk on biodiversity",
     "prompt": "Listen to the talk excerpt and choose the best answer.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Discussion on statistics",
     "prompt": "Listen to the discussion excerpt and choose the best answer.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "LISTENING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Lecture on urban planning",
     "prompt": "Listen to the lecture excerpt and choose the best answer.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Vaccine claim",
     "prompt": "Decide whether the statement matches the transcript.",
     "payload": {
@@ -168,6 +176,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Economics claim",
     "prompt": "Decide whether the statement matches the transcript.",
     "payload": {
@@ -184,6 +193,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Reading habits claim",
     "prompt": "Decide whether the statement matches the transcript.",
     "payload": {
@@ -200,6 +210,7 @@
     "skill": "LISTENING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Ethics claim",
     "prompt": "Decide whether the statement matches the transcript.",
     "payload": {
@@ -216,6 +227,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Speakers and views",
     "prompt": "Match each speaker to the view they express.",
     "payload": {
@@ -237,6 +249,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Fields and questions",
     "prompt": "Match each discipline to the question it addresses.",
     "payload": {
@@ -258,6 +271,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "B2",
     "title": "Energy sources",
     "prompt": "Match each energy source to its characteristic.",
     "payload": {
@@ -279,6 +293,7 @@
     "skill": "LISTENING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "C1",
     "title": "Thinkers and ideas",
     "prompt": "Match each idea to the description given.",
     "payload": {

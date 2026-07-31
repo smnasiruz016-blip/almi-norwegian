@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Introduce yourself",
     "prompt": "Write a short introduction about yourself in Norwegian.",
     "payload": {
@@ -25,6 +26,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Shopping note",
     "prompt": "Write a short shopping list note to your family.",
     "payload": {
@@ -45,6 +47,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Describe your family",
     "prompt": "Write a few sentences about your family.",
     "payload": {
@@ -65,6 +68,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Invite a friend for coffee",
     "prompt": "Write a short message inviting a friend for coffee.",
     "payload": {
@@ -85,6 +89,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "My daily routine",
     "prompt": "Write about what you do on a normal day.",
     "payload": {
@@ -105,6 +110,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "The weather today",
     "prompt": "Write a few sentences about the weather today.",
     "payload": {
@@ -125,6 +131,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Message to the teacher",
     "prompt": "Write a short message to your teacher that you are sick today.",
     "payload": {
@@ -145,6 +152,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "A2",
     "title": "My home",
     "prompt": "Write a few sentences describing where you live.",
     "payload": {
@@ -165,6 +173,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Present yourself",
     "prompt": "Introduce yourself out loud in Norwegian.",
     "payload": {
@@ -185,6 +194,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Talk about your family",
     "prompt": "Talk about your family out loud.",
     "payload": {
@@ -205,6 +215,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Describe your home",
     "prompt": "Describe where you live out loud.",
     "payload": {
@@ -225,6 +236,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Order at a café",
     "prompt": "Role-play ordering food and drink at a café.",
     "payload": {
@@ -245,6 +257,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Your daily routine",
     "prompt": "Talk about a normal day in your life.",
     "payload": {
@@ -265,6 +278,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "STRETCH",
+    "cefr": "A1",
     "title": "Ask for directions",
     "prompt": "Ask for directions to a place in town.",
     "payload": {
@@ -285,6 +299,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Your free time",
     "prompt": "Talk about what you like to do in your free time.",
     "payload": {

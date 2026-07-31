@@ -5,6 +5,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Library opening hours",
     "prompt": "Read the notice and choose the correct answer.",
     "payload": {
@@ -21,6 +22,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Letter from the barnehage",
     "prompt": "Read the letter and choose the correct answer.",
     "payload": {
@@ -37,6 +39,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Job advertisement",
     "prompt": "Read the advertisement and choose the correct answer.",
     "payload": {
@@ -53,6 +56,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Message from the fastlege",
     "prompt": "Read the message and choose the correct answer.",
     "payload": {
@@ -69,6 +73,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "News snippet on recycling",
     "prompt": "Read the news text and choose the correct answer.",
     "payload": {
@@ -85,6 +90,7 @@
     "skill": "READING",
     "taskType": "MCQ_SINGLE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Housing cooperative notice",
     "prompt": "Read the notice and choose the correct answer.",
     "payload": {
@@ -101,6 +107,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Bus timetable change",
     "prompt": "Decide if the statement is true (Sant) or false (Usant).",
     "payload": {
@@ -117,6 +124,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Email to a colleague",
     "prompt": "Decide if the statement is true (Sant) or false (Usant).",
     "payload": {
@@ -133,6 +141,7 @@
     "skill": "READING",
     "taskType": "TRUE_FALSE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Supermarket offer",
     "prompt": "Decide if the statement is true (Sant) or false (Usant).",
     "payload": {
@@ -149,6 +158,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Match person to activity",
     "prompt": "Match each person on the left to the correct activity on the right.",
     "payload": {
@@ -166,6 +176,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Match sign to place",
     "prompt": "Match each sign on the left to the place where you would see it on the right.",
     "payload": {
@@ -183,6 +194,7 @@
     "skill": "READING",
     "taskType": "MATCHING",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Match need to service",
     "prompt": "Match each person's need on the left to the right service in the kommune.",
     "payload": {
@@ -200,6 +212,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Note to the landlord",
     "prompt": "Choose the correct word for each gap.",
     "payload": {
@@ -218,6 +231,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "At the pharmacy",
     "prompt": "Choose the correct word for each gap.",
     "payload": {
@@ -236,6 +250,7 @@
     "skill": "READING",
     "taskType": "CLOZE",
     "difficulty": "STRETCH",
+    "cefr": "B1",
     "title": "Planning a course",
     "prompt": "Choose the correct word for each gap.",
     "payload": {

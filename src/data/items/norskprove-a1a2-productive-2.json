@@ -5,6 +5,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Note for the neighbour",
     "prompt": "Write a short note in Norwegian to a neighbour.",
     "payload": {
@@ -26,6 +27,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Library sign-up form",
     "prompt": "Fill in a simple library form in Norwegian.",
     "payload": {
@@ -47,6 +49,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Message: running late",
     "prompt": "Write a short text message to a friend in Norwegian.",
     "payload": {
@@ -68,6 +71,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Shopping list with a note",
     "prompt": "Write a shopping list and a short note in Norwegian.",
     "payload": {
@@ -89,6 +93,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Postcard from a day trip",
     "prompt": "Write a short postcard in Norwegian.",
     "payload": {
@@ -110,6 +115,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Email to the language school",
     "prompt": "Write a short email in Norwegian to your school.",
     "payload": {
@@ -131,6 +137,7 @@
     "skill": "WRITING",
     "taskType": "WRITING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Describe your kitchen",
     "prompt": "Write a few sentences describing your kitchen in Norwegian.",
     "payload": {
@@ -152,6 +159,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Introduce yourself to a class",
     "prompt": "Introduce yourself in Norwegian.",
     "payload": {
@@ -173,6 +181,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "Order at a bakery",
     "prompt": "Order food at a Norwegian bakery.",
     "payload": {
@@ -194,6 +203,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Describe your morning routine",
     "prompt": "Describe your morning in Norwegian.",
     "payload": {
@@ -215,6 +225,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Talk about your family",
     "prompt": "Talk about your family in Norwegian.",
     "payload": {
@@ -236,6 +247,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A1",
     "title": "Ask for directions",
     "prompt": "Ask for directions in Norwegian.",
     "payload": {
@@ -257,6 +269,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Plan the weekend with a friend",
     "prompt": "Suggest weekend plans in Norwegian.",
     "payload": {
@@ -278,6 +291,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "FOUNDATION",
+    "cefr": "A2",
     "title": "At the doctor's reception",
     "prompt": "Explain a simple problem at the doctor's.",
     "payload": {
@@ -299,6 +313,7 @@
     "skill": "SPEAKING",
     "taskType": "SPEAKING_PROMPT",
     "difficulty": "CORE",
+    "cefr": "A2",
     "title": "Describe your first day at work",
     "prompt": "Talk about starting a new job in Norwegian.",
     "payload": {
