@@ -159,10 +159,10 @@
     "prompt": "Decide whether the statement matches the passage.",
     "payload": {
       "passage": "Frykten for at maskiner skal gjøre menneskelig arbeidskraft overflødig, har fulgt hver eneste teknologiske omveltning siden den industrielle revolusjon. Historisk sett har ny teknologi likevel både fjernet og skapt arbeidsplasser, om enn sjelden i de samme bransjene eller for de samme menneskene. Den sentrale utfordringen er derfor ikke nødvendigvis mangel på arbeid som sådan, men omstillingen av arbeidsstyrken. Uten omfattende satsing på etter- og videreutdanning risikerer man at gevinstene tilfaller de få, mens kostnadene bæres av dem hvis kvalifikasjoner blir foreldet.",
-      "question": "Ifølge teksten har ny teknologi historisk sett utelukkende fjernet arbeidsplasser.",
+      "question": "Ifølge teksten har ny teknologi historisk sett både fjernet og skapt arbeidsplasser.",
       "options": ["Sant", "Usant"]
     },
-    "answer": { "type": "TRUE_FALSE", "correctIndex": 1 },
+    "answer": { "type": "TRUE_FALSE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
