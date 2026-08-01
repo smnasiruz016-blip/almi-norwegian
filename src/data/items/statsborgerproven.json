@@ -266,9 +266,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Har mor og far like rettigheter til felles barn etter norsk lov?",
-      "options": ["Ja, de har like rettigheter", "Nei, bare far", "Nei, bare mor", "Bare hvis de er gift"]
+      "options": ["Bare hvis de er gift", "Nei, bare far", "Nei, bare mor", "Ja, de har like rettigheter"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -282,9 +282,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvilket nummer ringer du ved brann i Norge?",
-      "options": ["110", "112", "113", "116117"]
+      "options": ["116117", "112", "113", "110"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -298,9 +298,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvilket nummer ringer du til politiet i en nødssituasjon?",
-      "options": ["110", "112", "113", "116117"]
+      "options": ["110", "116117", "113", "112"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -330,9 +330,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Er tvangsekteskap tillatt i Norge?",
-      "options": ["Ja", "Nei, det er forbudt", "Bare for voksne", "Bare med tillatelse"]
+      "options": ["Ja", "Bare for voksne", "Nei, det er forbudt", "Bare med tillatelse"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -362,9 +362,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva har alle barn i Norge rett til?",
-      "options": ["Omsorg og skolegang", "Å arbeide fulltid", "Å stemme ved valg", "Å kjøre bil"]
+      "options": ["Å kjøre bil", "Å arbeide fulltid", "Å stemme ved valg", "Omsorg og skolegang"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -378,9 +378,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvem har rett til nødvendig helsehjelp i Norge?",
-      "options": ["Alle som bor i Norge", "Bare norske statsborgere", "Bare menn", "Bare de som betaler ekstra"]
+      "options": ["Bare menn", "Bare norske statsborgere", "Alle som bor i Norge", "Bare de som betaler ekstra"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -410,9 +410,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvordan er offentlig helsehjelp i Norge i hovedsak finansiert?",
-      "options": ["Gjennom skatter", "Av kongen", "Av kirken", "Av utlandet"]
+      "options": ["Av utlandet", "Av kongen", "Av kirken", "Gjennom skatter"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -458,9 +458,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Har voksne innvandrere rett til opplæring i norsk?",
-      "options": ["Ja", "Nei", "Bare barn", "Bare hvis de betaler"]
+      "options": ["Bare barn", "Nei", "Ja", "Bare hvis de betaler"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -474,9 +474,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva betaler man av lønnen sin til fellesskapet i Norge?",
-      "options": ["Skatt", "Husleie", "Kirkeavgift", "Ingenting"]
+      "options": ["Ingenting", "Husleie", "Kirkeavgift", "Skatt"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -490,9 +490,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Er det lov å forskjellsbehandle ansatte på grunn av kjønn eller religion?",
-      "options": ["Nei, det er forbudt", "Ja", "Bare små bedrifter", "Bare staten kan"]
+      "options": ["Bare staten kan", "Ja", "Bare små bedrifter", "Nei, det er forbudt"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -522,9 +522,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Fra hvilken alder kan man stemme ved valg i Norge?",
-      "options": ["16 år", "18 år", "20 år", "21 år"]
+      "options": ["16 år", "21 år", "20 år", "18 år"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -538,9 +538,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvor ofte er det stortingsvalg i Norge?",
-      "options": ["Hvert år", "Hvert andre år", "Hvert fjerde år", "Hvert femte år"]
+      "options": ["Hvert fjerde år", "Hvert andre år", "Hvert år", "Hvert femte år"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -554,9 +554,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva betyr ytringsfrihet?",
-      "options": ["Retten til å si og mene det man vil", "At bare staten kan uttale seg", "At man må være enig med regjeringen", "At aviser er forbudt"]
+      "options": ["At man må være enig med regjeringen", "At bare staten kan uttale seg", "Retten til å si og mene det man vil", "At aviser er forbudt"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -570,9 +570,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvilke tre land grenser Norge til på land?",
-      "options": ["Sverige, Finland og Russland", "Danmark, Sverige og Island", "Finland, Russland og Polen", "Sverige, Danmark og Tyskland"]
+      "options": ["Finland, Russland og Polen", "Danmark, Sverige og Island", "Sverige, Finland og Russland", "Sverige, Danmark og Tyskland"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   }
 ]

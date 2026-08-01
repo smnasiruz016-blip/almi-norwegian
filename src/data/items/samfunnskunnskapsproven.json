@@ -266,9 +266,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvilken myndighet behandler søknader om oppholdstillatelse og statsborgerskap?",
-      "options": ["UDI (Utlendingsdirektoratet)", "NAV", "Skatteetaten", "Politiet"]
+      "options": ["Skatteetaten", "NAV", "UDI (Utlendingsdirektoratet)", "Politiet"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -298,9 +298,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva er introduksjonsprogrammet?",
-      "options": ["Et program som hjelper nyankomne flyktninger med norsk og samfunnskunnskap for å komme i arbeid", "En pensjonsordning", "Et lån fra banken", "En helseforsikring"]
+      "options": ["Et lån fra banken", "En pensjonsordning", "Et program som hjelper nyankomne flyktninger med norsk og samfunnskunnskap for å komme i arbeid", "En helseforsikring"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -330,9 +330,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvor kan du få gratis lån av bøker og tilgang til internett og hjelp?",
-      "options": ["På biblioteket", "På politistasjonen", "På sykehuset", "Hos UDI"]
+      "options": ["Hos UDI", "På politistasjonen", "På sykehuset", "På biblioteket"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -346,9 +346,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Er det lov å slå barn som en del av oppdragelsen i Norge?",
-      "options": ["Ja, hvis barnet er lite", "Nei, det er forbudt", "Bare far har lov", "Ja, på skolen"]
+      "options": ["Nei, det er forbudt", "Ja, hvis barnet er lite", "Bare far har lov", "Ja, på skolen"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -362,9 +362,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva er barnetrygd?",
-      "options": ["Penger foreldre får for å ha barn", "En skatt på barn", "En forsikring for eldre", "Et lån til barnehage"]
+      "options": ["En forsikring for eldre", "En skatt på barn", "Penger foreldre får for å ha barn", "Et lån til barnehage"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -394,9 +394,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvilken instans skal gripe inn hvis et barn ikke har det trygt hjemme?",
-      "options": ["Barnevernet", "Skatteetaten", "UDI", "Fagforeningen"]
+      "options": ["Fagforeningen", "Skatteetaten", "UDI", "Barnevernet"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -410,9 +410,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Fra hvilken alder har barn rett til plass i barnehage i Norge?",
-      "options": ["Fra 1 år", "Fra 3 år", "Fra 6 år", "Fra fødselen"]
+      "options": ["Fra fødselen", "Fra 3 år", "Fra 6 år", "Fra 1 år"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -426,9 +426,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva er en fastlege?",
-      "options": ["En fast allmennlege du er knyttet til", "En lege på sykehuset", "En tannlege", "En lege bare for barn"]
+      "options": ["En tannlege", "En lege på sykehuset", "En fast allmennlege du er knyttet til", "En lege bare for barn"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -442,9 +442,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvilket nummer ringer du til legevakten når det haster, men ikke er livstruende?",
-      "options": ["113", "116117", "110", "1177"]
+      "options": ["116117", "113", "110", "1177"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -458,9 +458,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Er tannlege for voksne gratis i Norge?",
-      "options": ["Ja, helt gratis", "Nei, voksne betaler selv", "Bare for menn", "Bare i akutte tilfeller"]
+      "options": ["Ja, helt gratis", "Bare i akutte tilfeller", "Bare for menn", "Nei, voksne betaler selv"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -474,9 +474,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva er en egenandel i helsevesenet?",
-      "options": ["Et beløp du selv betaler, opp til et frikort-tak", "En gratis medisin", "En skatt til kommunen", "En bot"]
+      "options": ["En skatt til kommunen", "En gratis medisin", "Et beløp du selv betaler, opp til et frikort-tak", "En bot"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -490,9 +490,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvor henter du medisiner som legen har skrevet ut på resept?",
-      "options": ["På et apotek", "På biblioteket", "Hos NAV", "På posten"]
+      "options": ["På posten", "På biblioteket", "Hos NAV", "På et apotek"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -506,9 +506,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Er den offentlige grunnskolen gratis i Norge?",
-      "options": ["Ja", "Nei", "Bare for norske statsborgere", "Bare barneskolen"]
+      "options": ["Bare barneskolen", "Nei", "Bare for norske statsborgere", "Ja"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -522,9 +522,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Fra hvilken alder begynner barn vanligvis på skolen i Norge?",
-      "options": ["5 år", "6 år", "7 år", "8 år"]
+      "options": ["6 år", "5 år", "7 år", "8 år"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -538,9 +538,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva kommer etter grunnskolen (frivillig, men en rett man har)?",
-      "options": ["Videregående opplæring", "Barnehage", "Introduksjonsprogram", "Militæret"]
+      "options": ["Militæret", "Barnehage", "Introduksjonsprogram", "Videregående opplæring"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -554,9 +554,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Har voksne innvandrere rett til opplæring i norsk og samfunnskunnskap?",
-      "options": ["Ja, gjennom voksenopplæringen", "Nei", "Bare barn har rett", "Bare hvis de betaler selv"]
+      "options": ["Bare hvis de betaler selv", "Nei", "Bare barn har rett", "Ja, gjennom voksenopplæringen"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -570,9 +570,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva bør du alltid ha skriftlig når du begynner i en ny jobb?",
-      "options": ["En arbeidsavtale (arbeidskontrakt)", "Et pass", "Et bankkort", "En legeerklæring"]
+      "options": ["En legeerklæring", "Et pass", "Et bankkort", "En arbeidsavtale (arbeidskontrakt)"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -602,9 +602,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvor mange ukers ferie har man vanligvis krav på etter ferieloven?",
-      "options": ["1 uke", "2 uker", "4 uker og 1 dag", "8 uker"]
+      "options": ["4 uker og 1 dag", "2 uker", "1 uke", "8 uker"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -618,9 +618,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva må du gjøre hvis du blir syk over lengre tid og ikke kan jobbe?",
-      "options": ["Skaffe sykmelding fra lege og gi beskjed til arbeidsgiver", "Bare slutte å møte opp", "Betale arbeidsgiveren", "Ringe politiet"]
+      "options": ["Betale arbeidsgiveren", "Bare slutte å møte opp", "Skaffe sykmelding fra lege og gi beskjed til arbeidsgiver", "Ringe politiet"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -634,9 +634,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hva er en fagforening?",
-      "options": ["En organisasjon som arbeider for arbeidstakernes rettigheter", "En statlig myndighet", "En bank", "En skole"]
+      "options": ["En bank", "En statlig myndighet", "En organisasjon som arbeider for arbeidstakernes rettigheter", "En skole"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -666,9 +666,9 @@
     "prompt": "Choose the correct answer.",
     "payload": {
       "question": "Hvilket land var Norge i union med fram til 1905?",
-      "options": ["Danmark", "Sverige", "Finland", "Island"]
+      "options": ["Danmark", "Island", "Finland", "Sverige"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
