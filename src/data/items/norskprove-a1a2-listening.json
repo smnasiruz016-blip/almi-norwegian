@@ -28,9 +28,9 @@
     "payload": {
       "transcript": "Klokka er ni nå. Butikken åpner klokka ti.",
       "question": "Når åpner butikken?",
-      "options": ["Klokka ni", "Klokka ti", "Klokka elleve", "Klokka åtte"]
+      "options": ["Klokka ni", "Klokka åtte", "Klokka elleve", "Klokka ti"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -45,9 +45,9 @@
     "payload": {
       "transcript": "Jeg vil gjerne ha en kopp te og et stykke kake, takk.",
       "question": "Hva bestiller personen?",
-      "options": ["Kaffe og brød", "Te og kake", "Vann og egg", "Brus og pizza"]
+      "options": ["Te og kake", "Kaffe og brød", "Vann og egg", "Brus og pizza"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -62,9 +62,9 @@
     "payload": {
       "transcript": "Toget til Trondheim går fra spor tre klokka halv to.",
       "question": "Fra hvilket spor går toget?",
-      "options": ["Spor én", "Spor to", "Spor tre", "Spor fire"]
+      "options": ["Spor én", "Spor tre", "Spor to", "Spor fire"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
     "maxPoints": 1
   },
   {
@@ -96,9 +96,9 @@
     "payload": {
       "transcript": "I helgen besøker vi bestemoren min. Hun bor på landet.",
       "question": "Hvem besøker de i helgen?",
-      "options": ["Bestemor", "Bestefar", "En venn", "Læreren"]
+      "options": ["En venn", "Bestefar", "Bestemor", "Læreren"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -113,9 +113,9 @@
     "payload": {
       "transcript": "Det blir solrikt og varmt i morgen. Temperaturen blir tjuefem grader.",
       "question": "Hvordan blir været i morgen?",
-      "options": ["Regnfullt", "Solrikt og varmt", "Kaldt", "Snø"]
+      "options": ["Solrikt og varmt", "Regnfullt", "Kaldt", "Snø"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {

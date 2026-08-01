@@ -13,12 +13,12 @@
       "question": "Hva er kjernen i paradokset teksten beskriver?",
       "options": [
         "At oljeinntektene er i ferd med å ta slutt raskere enn ventet",
-        "At selve rikdommen kan gjøre den nødvendige omstillingen vanskeligere å gjennomføre",
+        "At nye næringer allerede har erstattet petroleumssektoren",
         "At oljefondet er for lite til å finansiere velferden",
-        "At nye næringer allerede har erstattet petroleumssektoren"
+        "At selve rikdommen kan gjøre den nødvendige omstillingen vanskeligere å gjennomføre"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -35,12 +35,12 @@
       "question": "Hvorfor har dialektene ifølge teksten fått en så høy status i Norge?",
       "options": [
         "Fordi myndighetene tidlig innførte en offisiell talenorm",
-        "Fordi landet manglet en dominerende elite som kunne påtvinge en enhetlig standarduttale",
         "Fordi dialektene alltid har vært like over hele landet",
+        "Fordi landet manglet en dominerende elite som kunne påtvinge en enhetlig standarduttale",
         "Fordi mediene forbød bruk av standardspråk"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -56,13 +56,13 @@
       "passage": "Allemannsretten gir alle rett til å ferdes fritt i utmark, uavhengig av hvem som eier grunnen. Retten hviler på en gammel sedvane, men ble lovfestet i friluftsloven for å beskytte den mot press fra økende privatisering av strandsoner og fjellområder. Prinsippet forutsetter en gjensidighet: den som ferdes, skal vise hensyn, ikke forsøple og ikke være til unødig ulempe for grunneieren eller andre. Debatten i dag hander sjelden om selve retten, men om hvordan den skal forvaltes når stadig flere mennesker søker ut i naturen samtidig. Slitasje på sårbare områder og konflikter mellom ulike brukergrupper har gjort spørsmålet om regulering mer påtrengende enn før.",
       "question": "Hva handler dagens debatt om allemannsretten først og fremst om?",
       "options": [
-        "Om retten bør avskaffes helt",
-        "Om grunneierne skal få eneretten tilbake",
         "Om hvordan retten skal forvaltes når stadig flere bruker naturen samtidig",
+        "Om grunneierne skal få eneretten tilbake",
+        "Om retten bør avskaffes helt",
         "Om hvorvidt sedvane kan lovfestes"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -78,13 +78,13 @@
       "passage": "De nordiske samfunnene kjennetegnes av et usedvanlig høyt nivå av mellommenneskelig tillit, og forskere har lenge diskutert om denne tilliten er en årsak til eller en følge av velferdsstaten. Én posisjon hevder at omfattende fellesskapsordninger skaper tillit fordi de reduserer usikkerhet og gjør folk mindre avhengige av tilfeldig velvilje. En annen posisjon snur forklaringen om og peker på at det nettopp var en allerede eksisterende tillit som gjorde det mulig å bygge opp så kostbare ordninger uten at de kollapset under mistanke om misbruk. Sannsynligvis virker mekanismene begge veier og forsterker hverandre over tid, noe som gjør det metodisk krevende å isolere hva som kom først.",
       "question": "Hva gjør det ifølge teksten vanskelig å avgjøre forholdet mellom tillit og velferdsstat?",
       "options": [
-        "At tillit ikke kan måles i det hele tatt",
         "At de to størrelsene sannsynligvis påvirker hverandre gjensidig over tid",
+        "At tillit ikke kan måles i det hele tatt",
         "At velferdsstaten er for ny til å studeres",
         "At tilliten i Norden er lavere enn antatt"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -260,11 +260,11 @@
     "payload": {
       "passage": "Utdanning tillegges ofte en sentral rolle for {{1}} av demokratiet, ettersom opplyste borgere antas å være bedre i stand til å gjennomskue politiske argumenter. Kritikere påpeker likevel at formell skolegang ikke i seg selv {{2}} kritisk sans, dersom undervisningen utelukkende belønner pugging.",
       "gaps": [
-        { "id": 1, "options": ["oppløsningen", "opprettholdelsen", "avskaffelsen"] },
-        { "id": 2, "options": ["garanterer", "hindrer", "overser"] }
+        { "id": 1, "options": ["opprettholdelsen", "oppløsningen", "avskaffelsen"] },
+        { "id": 2, "options": ["overser", "hindrer", "garanterer"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 1 }, { "id": 2, "index": 0 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 2 }] },
     "maxPoints": 2
   },
   {
@@ -279,11 +279,11 @@
     "payload": {
       "passage": "Klimamodeller bygger på et stort antall {{1}} som forskerne løpende justerer i takt med nye målinger. Selv om modellene aldri kan forutsi framtiden med fullstendig {{2}}, gir de likevel et robust grunnlag for å vurdere sannsynlige utviklingstrekk.",
       "gaps": [
-        { "id": 1, "options": ["antakelser", "tilfeldigheter", "fordommer"] },
-        { "id": 2, "options": ["usikkerhet", "presisjon", "likegyldighet"] }
+        { "id": 1, "options": ["tilfeldigheter", "antakelser", "fordommer"] },
+        { "id": 2, "options": ["presisjon", "usikkerhet", "likegyldighet"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 1 }, { "id": 2, "index": 0 }] },
     "maxPoints": 2
   },
   {
@@ -298,11 +298,11 @@
     "payload": {
       "passage": "Den nordiske velferdsmodellen hviler på en høy grad av {{1}}, der borgerne gjennom skatten finansierer felles ytelser. Modellens tilhengere framhever at den demper {{2}} mellom samfunnsgrupper, mens kritikere frykter at det høye skattenivået svekker motivasjonen til å arbeide.",
       "gaps": [
-        { "id": 1, "options": ["omfordeling", "privatisering", "isolasjon"] },
-        { "id": 2, "options": ["likheten", "ulikheten", "enigheten"] }
+        { "id": 1, "options": ["privatisering", "omfordeling", "isolasjon"] },
+        { "id": 2, "options": ["likheten", "enigheten", "ulikheten"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 1 }, { "id": 2, "index": 2 }] },
     "maxPoints": 2
   }
 ]

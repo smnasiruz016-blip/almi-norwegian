@@ -28,9 +28,9 @@
     "payload": {
       "transcript": "Vi beklager. Toget mot Bergen er forsinket omtrent tjue minutter på grunn av en feil på skinnene. Toget går nå fra spor tre klokka kvart over ni. Vi ber de reisende om å holde god avstand til kanten av perrongen. Takk for tålmodigheten.",
       "question": "Hvorfor er toget forsinket?",
-      "options": ["Det er for mange passasjerer", "Det er en feil på skinnene", "Lokføreren er syk", "Det snør mye"]
+      "options": ["Det er for mange passasjerer", "Lokføreren er syk", "Det er en feil på skinnene", "Det snør mye"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -45,9 +45,9 @@
     "payload": {
       "transcript": "Kunde: Hei, jeg vil gjerne ha to grovbrød og fire rundstykker. Ekspeditør: Ja, det blir sekstito kroner til sammen. Kunde: Kan jeg betale med kort? Ekspeditør: Ja, det går fint. Bare hold kortet mot terminalen.",
       "question": "Hva kjøper kunden?",
-      "options": ["To grovbrød og fire rundstykker", "Fire grovbrød og to kaker", "Ett grovbrød og en kopp kaffe", "To kaker og fire rundstykker"]
+      "options": ["To kaker og fire rundstykker", "Fire grovbrød og to kaker", "Ett grovbrød og en kopp kaffe", "To grovbrød og fire rundstykker"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -62,9 +62,9 @@
     "payload": {
       "transcript": "Kjære foreldre. I morgen skal klassen på tur til dyreparken. Barna må møte på skolen klokka åtte som vanlig. Husk å gi dem en stor matpakke og noe å drikke. Vi er tilbake igjen klokka to. Vennlig hilsen, kontaktlæreren.",
       "question": "Hva må foreldrene huske å gi barna med?",
-      "options": ["Penger til is", "En stor matpakke og noe å drikke", "Ekstra klær og støvler", "En bok og en blyant"]
+      "options": ["En stor matpakke og noe å drikke", "Penger til is", "Ekstra klær og støvler", "En bok og en blyant"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -79,9 +79,9 @@
     "payload": {
       "transcript": "Og så været. I morgen blir det kjølig med en del regn om formiddagen. Om ettermiddagen klarner det opp, og sola kommer fram. Temperaturen blir rundt tolv grader. Det er frisk vind fra vest, så ta på deg en jakke.",
       "question": "Hvordan blir været om ettermiddagen?",
-      "options": ["Det regner hele dagen", "Det klarner opp, og sola kommer fram", "Det kommer snø", "Det blir tåke"]
+      "options": ["Det regner hele dagen", "Det kommer snø", "Det klarner opp, og sola kommer fram", "Det blir tåke"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -113,9 +113,9 @@
     "payload": {
       "transcript": "Du har ringt til servicetorget i kommunen. Alle medarbeiderne våre er opptatt akkurat nå. Du er nummer tre i køen. Hvis du vil bestille time, kan du også gjøre det på nettsidene våre. Vennligst vent, så kommer du til å snakke med en medarbeider.",
       "question": "Hva kan man også gjøre i stedet for å vente?",
-      "options": ["Sende et brev", "Bestille time på nettsidene", "Møte opp personlig med en gang", "Ringe et annet nummer"]
+      "options": ["Bestille time på nettsidene", "Sende et brev", "Møte opp personlig med en gang", "Ringe et annet nummer"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {

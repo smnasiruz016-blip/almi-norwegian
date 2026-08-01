@@ -62,9 +62,9 @@
     "payload": {
       "passage": "Hei Petter. Du har bestilt time hos fastlegen tirsdag klokka 11.30. Kom gjerne ti minutter før, så du rekker å melde deg i luka. Hvis du ikke kan komme, må du gi beskjed senest dagen før. Ta med listen over medisinene dine.",
       "question": "Når må Petter senest gi beskjed hvis han ikke kan komme?",
-      "options": ["Samme dag om morgenen", "Dagen før", "En time før", "Han trenger ikke gi beskjed"]
+      "options": ["Samme dag om morgenen", "Han trenger ikke gi beskjed", "En time før", "Dagen før"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -79,9 +79,9 @@
     "payload": {
       "passage": "Kommunen innfører nye regler for søppel fra neste måned. Beboerne må nå sortere avfallet i fire dunker: mat, plast, papir og restavfall. De grønne posene er bare til matavfall. Hvis noen sorterer feil, får de først en vennlig påminnelse i postkassa.",
       "question": "Hva skjer første gang noen sorterer feil?",
-      "options": ["De får et gebyr", "De får en påminnelse i postkassa", "Dunken blir fjernet", "De må betale mer i husleie"]
+      "options": ["De får en påminnelse i postkassa", "De får et gebyr", "Dunken blir fjernet", "De må betale mer i husleie"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -96,9 +96,9 @@
     "payload": {
       "passage": "Til alle beboere i oppgang B. Fellesvaskeriet skal males i neste uke, og derfor er det stengt fra mandag til onsdag. I disse dagene kan dere bruke vaskemaskinene i oppgang A. Husk å bestille tid på skjermen ved inngangen. Vi beklager ulempen dette kan gi.",
       "question": "Hva skal beboerne gjøre mens fellesvaskeriet er stengt?",
-      "options": ["Vaske for hånd", "Vente til torsdag", "Bruke vaskemaskinene i oppgang A", "Vaske hjemme i leiligheten"]
+      "options": ["Bruke vaskemaskinene i oppgang A", "Vente til torsdag", "Vaske for hånd", "Vaske hjemme i leiligheten"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -238,10 +238,10 @@
       "passage": "Jeg hadde vondt i halsen, så jeg gikk på {{1}} for å kjøpe litt medisin. Kvinnen bak disken sa at jeg måtte ta tablettene to {{2}} om dagen etter maten.",
       "gaps": [
         { "id": 1, "options": ["apoteket", "postkontoret", "stasjonen"] },
-        { "id": 2, "options": ["uker", "ganger", "måneder"] }
+        { "id": 2, "options": ["uker", "måneder", "ganger"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 2 }] },
     "maxPoints": 2
   },
   {
@@ -256,11 +256,11 @@
     "payload": {
       "passage": "Jeg vil gjerne bli bedre i norsk, så jeg har {{1}} meg på et kurs på voksenopplæringen. Undervisningen er om kvelden, fordi jeg {{2}} på dagtid. Jeg gleder meg til å møte de andre kursdeltakerne.",
       "gaps": [
-        { "id": 1, "options": ["meldt", "solgt", "glemt"] },
-        { "id": 2, "options": ["sover", "jobber", "reiser"] }
+        { "id": 1, "options": ["solgt", "meldt", "glemt"] },
+        { "id": 2, "options": ["sover", "reiser", "jobber"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 1 }, { "id": 2, "index": 2 }] },
     "maxPoints": 2
   }
 ]

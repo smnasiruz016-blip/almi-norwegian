@@ -11,9 +11,9 @@
     "payload": {
       "passage": "Hei! Jeg heter Kari. Jeg bor i Bergen. Jeg er tjueåtte år gammel.",
       "question": "Hvor bor Kari?",
-      "options": ["I Oslo", "I Bergen", "I Trondheim", "I Stavanger"]
+      "options": ["I Oslo", "I Trondheim", "I Bergen", "I Stavanger"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -28,9 +28,9 @@
     "payload": {
       "passage": "Ola har en kone og tre barn. Sønnen heter Jonas, og døtrene heter Nora og Emma.",
       "question": "Hvor mange barn har Ola?",
-      "options": ["Ett", "To", "Tre", "Fire"]
+      "options": ["Ett", "Tre", "To", "Fire"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
     "maxPoints": 1
   },
   {
@@ -45,9 +45,9 @@
     "payload": {
       "passage": "Jeg kjøper melk, brød og egg i butikken. Brødet koster tjue kroner.",
       "question": "Hva koster brødet?",
-      "options": ["Ti kroner", "Femten kroner", "Tjue kroner", "Tretti kroner"]
+      "options": ["Tjue kroner", "Femten kroner", "Ti kroner", "Tretti kroner"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -62,9 +62,9 @@
     "payload": {
       "passage": "I dag er det kaldt. Det regner, og vinden blåser. Jeg tar på meg en varm jakke.",
       "question": "Hvordan er været i dag?",
-      "options": ["Varmt og solrikt", "Kaldt og regnfullt", "Varmt og tørt", "Solrikt hele dagen"]
+      "options": ["Kaldt og regnfullt", "Varmt og solrikt", "Varmt og tørt", "Solrikt hele dagen"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -96,9 +96,9 @@
     "payload": {
       "passage": "Nora jobber på et sykehus. Hun er lege. Hun jobber ofte om kvelden.",
       "question": "Hva er jobben til Nora?",
-      "options": ["Sykepleier", "Lege", "Lærer", "Kokk"]
+      "options": ["Sykepleier", "Kokk", "Lærer", "Lege"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -219,10 +219,10 @@
       "passage": "Jeg {{1}} Kari. Jeg {{2}} i Norge.",
       "gaps": [
         { "id": 1, "options": ["heter", "bor", "spiser"] },
-        { "id": 2, "options": ["heter", "bor", "drikker"] }
+        { "id": 2, "options": ["heter", "drikker", "bor"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 2 }] },
     "maxPoints": 2
   },
   {
@@ -237,11 +237,11 @@
     "payload": {
       "passage": "Om morgenen drikker jeg {{1}}. Om kvelden spiser jeg {{2}}.",
       "gaps": [
-        { "id": 1, "options": ["kaffe", "sko", "bord"] },
-        { "id": 2, "options": ["middag", "sykkel", "lampe"] }
+        { "id": 1, "options": ["sko", "kaffe", "bord"] },
+        { "id": 2, "options": ["lampe", "sykkel", "middag"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 0 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 1 }, { "id": 2, "index": 2 }] },
     "maxPoints": 2
   },
   {
@@ -256,11 +256,11 @@
     "payload": {
       "passage": "Det er {{1}} i dag, så jeg tar på meg en jakke. Jeg går en {{2}} i parken.",
       "gaps": [
-        { "id": 1, "options": ["varmt", "kaldt", "stort"] },
-        { "id": 2, "options": ["tur", "bil", "bok"] }
+        { "id": 1, "options": ["kaldt", "varmt", "stort"] },
+        { "id": 2, "options": ["bil", "tur", "bok"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 1 }, { "id": 2, "index": 0 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
     "maxPoints": 2
   }
 ]

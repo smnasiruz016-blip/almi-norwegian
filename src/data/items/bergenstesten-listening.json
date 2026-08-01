@@ -36,11 +36,11 @@
       "options": [
         "Å innføre studieavgifter for alle",
         "Å avvikle all offentlig støtte",
-        "Å fordele støtten mer målrettet framfor å innføre avgifter",
-        "At bare velstående skal få studere"
+        "At bare velstående skal få studere",
+        "Å fordele støtten mer målrettet framfor å innføre avgifter"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -78,13 +78,13 @@
       "transcript": "Når vi snakker om samiske språk i dag, er det lett å behandle dem som ett enkelt språk, men det er en forenkling. Det finnes flere samiske språk, og noen av dem er så ulike at de innfødte talerne ikke uten videre forstår hverandre. Enkelte av variantene har svært få gjenlevende talere og regnes som sterkt truet. Fornorskingspolitikken gjennom store deler av det tjuende århundret bidro til at overføringen mellom generasjoner ble brutt mange steder. At noen av språkene i dag likevel opplever en forsiktig revitalisering, skyldes ikke minst målrettet innsats i skole og barnehage, der yngre generasjoner igjen får tilgang til et språk foreldrene ofte mistet.",
       "question": "Hva framhever foreleseren om de samiske språkene?",
       "options": [
-        "At de utgjør ett enkelt, enhetlig språk",
         "At det dreier seg om flere språk, og at fornorsking svekket overføringen mellom generasjoner",
+        "At de utgjør ett enkelt, enhetlig språk",
         "At alle variantene har like mange talere",
         "At ingen av språkene lenger er i bruk"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -123,12 +123,12 @@
       "question": "Hvorfor foretrekker forskeren ofte medianen?",
       "options": [
         "Fordi den alltid er høyere enn gjennomsnittet",
-        "Fordi den er mindre følsom for ekstreme verdier",
         "Fordi den er lettere å regne ut",
+        "Fordi den er mindre følsom for ekstreme verdier",
         "Fordi gjennomsnitt aldri bør brukes"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
     "maxPoints": 1
   },
   {
@@ -144,13 +144,13 @@
       "transcript": "Byplanlegging handler ikke bare om estetikk, men om hvordan de fysiske rammene former menneskers atferd. Når vi anlegger brede veier og legger kjøpesentrene utenfor byen, skaper vi et bilavhengig samfunn nesten uten å merke det. Omvendt kan tette kvartaler med kort avstand mellom bolig, arbeid og butikk fremme både gange, sykling og tilfeldige møter mellom mennesker. Arkitekten former altså ikke bare bygninger, men indirekte også de sosiale mønstrene som utspiller seg mellom dem. Derfor bør planlegging alltid følges av en refleksjon over hva slags liv vi ønsker å gjøre mulig.",
       "question": "Hva understreker foreleseren om byplanlegging?",
       "options": [
-        "At den bare handler om hvordan bygninger ser ut",
         "At fysiske rammer former menneskers atferd og sosiale mønstre",
+        "At den bare handler om hvordan bygninger ser ut",
         "At brede veier alltid er å foretrekke",
         "At arkitektur ikke har noen sosial betydning"
       ]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {

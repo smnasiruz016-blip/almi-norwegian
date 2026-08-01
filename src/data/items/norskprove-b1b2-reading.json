@@ -11,9 +11,9 @@
     "payload": {
       "passage": "Kjære lånere. Fra og med 1. september endrer biblioteket i Sandnes åpningstidene sine. Vi har nå betjent åpningstid hver ukedag fra klokka 10 til 18. På lørdager kan du komme innom mellom klokka 10 og 15. Utenom disse tidene kan du fortsatt bruke det selvbetjente biblioteket dersom du har lånekort og en firesifret kode. Husk at det ikke er ansatte til stede på søndager.",
       "question": "Når kan du få hjelp av de ansatte på biblioteket?",
-      "options": ["Bare på søndager", "På ukedager mellom klokka 10 og 18", "Hele døgnet med lånekort", "Aldri på lørdager"]
+      "options": ["På ukedager mellom klokka 10 og 18", "Bare på søndager", "Hele døgnet med lånekort", "Aldri på lørdager"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -28,9 +28,9 @@
     "payload": {
       "passage": "Vi søker en blid og pålitelig medarbeider til dagligvarebutikken vår på Grünerløkka i Oslo. Du må kunne jobbe både i helgene og på hverdager, og det er viktig at du liker å hjelpe kundene. Erfaring fra butikk er en fordel, men det er ikke et krav, for vi lærer deg opp. Vi legger størst vekt på at du møter presis og har godt humør. Send søknaden din innen 20. mars.",
       "question": "Hva legger arbeidsgiveren størst vekt på?",
-      "options": ["At du har lang erfaring", "At du bare kan jobbe i helgene", "At du er presis og har godt humør", "At du bor på Grünerløkka"]
+      "options": ["At du har lang erfaring", "At du er presis og har godt humør", "At du bare kan jobbe i helgene", "At du bor på Grünerløkka"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
     "maxPoints": 1
   },
   {
@@ -45,9 +45,9 @@
     "payload": {
       "passage": "Mange nordmenn sykler til jobb, uansett om det regner eller snør. Noen mener at kommunen bør bruke enda mer penger på brede sykkelveier, slik at det blir tryggere å sykle om vinteren. Andre mener derimot at pengene heller bør gå til kollektivtrafikken, fordi ikke alle har mulighet til å sykle. Selv er jeg overbevist om at vi trenger begge deler dersom vi vil ha færre biler i sentrum.",
       "question": "Hva mener skribenten selv?",
-      "options": ["At man bare bør satse på sykkelveier", "At biler er den beste løsningen", "At både sykkelveier og kollektivtrafikk trengs", "At kommunen ikke bør bruke penger på trafikk"]
+      "options": ["At både sykkelveier og kollektivtrafikk trengs", "At biler er den beste løsningen", "At man bare bør satse på sykkelveier", "At kommunen ikke bør bruke penger på trafikk"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
   },
   {
@@ -62,9 +62,9 @@
     "payload": {
       "passage": "Kjære innbygger. Vi skriver til deg fordi du har søkt om beboerparkering i bydelen din. Kortet er nå på vei med posten og bør være framme innen ti virkedager. Dersom kortet ikke har kommet etter to uker, ber vi deg kontakte oss på telefon eller møte opp på servicetorget. Det gamle kortet ditt er fortsatt gyldig helt til du får det nye.",
       "question": "Hva skal innbyggeren gjøre hvis kortet ikke kommer innen to uker?",
-      "options": ["Vente en måned til", "Kontakte kommunen", "Søke om kortet på nytt på nett", "Kaste det gamle kortet"]
+      "options": ["Vente en måned til", "Kaste det gamle kortet", "Søke om kortet på nytt på nett", "Kontakte kommunen"]
     },
-    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 3 },
     "maxPoints": 1
   },
   {
@@ -237,11 +237,11 @@
     "payload": {
       "passage": "Da jeg begynte i den nye jobben, var jeg litt nervøs, {{1}} kollegene tok godt imot meg. Etter et par uker følte jeg meg hjemme, og nå gleder jeg meg faktisk {{2}} å møte på jobb hver dag.",
       "gaps": [
-        { "id": 1, "options": ["men", "derfor", "fordi"] },
+        { "id": 1, "options": ["fordi", "derfor", "men"] },
         { "id": 2, "options": ["på", "til", "av"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 2 }, { "id": 2, "index": 1 }] },
     "maxPoints": 2
   },
   {
@@ -257,10 +257,10 @@
       "passage": "Helsedirektoratet anbefaler at voksne beveger seg minst en halvtime hver dag. Det trenger ikke å være hard trening; en tur i frisk luft {{1}} også. Hvis du gjør det til en vane, blir det lettere å holde ut, {{2}} du har det travelt.",
       "gaps": [
         { "id": 1, "options": ["teller", "koster", "mangler"] },
-        { "id": 2, "options": ["så", "selv om", "før"] }
+        { "id": 2, "options": ["så", "før", "selv om"] }
       ]
     },
-    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 1 }] },
+    "answer": { "type": "CLOZE", "correct": [{ "id": 1, "index": 0 }, { "id": 2, "index": 2 }] },
     "maxPoints": 2
   }
 ]
