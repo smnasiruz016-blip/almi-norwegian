@@ -654,5 +654,53 @@
     },
     "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Historie, geografi og levesett",
+    "title": "Union med Sverige",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvilket land var Norge i union med fram til 1905?",
+      "options": ["Danmark", "Sverige", "Finland", "Island"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Historie, geografi og levesett",
+    "title": "Samene",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er samene i Norge?",
+      "options": ["Norges urfolk", "Innvandrere fra 1900-tallet", "En politisk parti", "En religion"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "PERMANENT_RESIDENCE",
+    "exam": "SAMFUNNSKUNNSKAP",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Historie, geografi og levesett",
+    "title": "Fjorder",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva er Norge kjent for langs kysten sin?",
+      "options": ["Ørkener", "Vulkaner", "Fjorder", "Jungler"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
   }
 ]

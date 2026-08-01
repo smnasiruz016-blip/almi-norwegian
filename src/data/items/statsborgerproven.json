@@ -270,5 +270,309 @@
     },
     "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
     "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Ny innvandrer i Norge",
+    "title": "Nødnummer brann",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvilket nummer ringer du ved brann i Norge?",
+      "options": ["110", "112", "113", "116117"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Ny innvandrer i Norge",
+    "title": "Nødnummer politi",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvilket nummer ringer du til politiet i en nødssituasjon?",
+      "options": ["110", "112", "113", "116117"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Ny innvandrer i Norge",
+    "title": "Krav for statsborgerskap",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva må man blant annet ha for å bli norsk statsborger?",
+      "options": ["Norskkunnskaper og bestått prøve i samfunnskunnskap/statsborgerprøve", "Bare et pass", "Bare en jobb", "Ingenting"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Barn og familie",
+    "title": "Tvangsekteskap",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Er tvangsekteskap tillatt i Norge?",
+      "options": ["Ja", "Nei, det er forbudt", "Bare for voksne", "Bare med tillatelse"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Barn og familie",
+    "title": "Skoleplikt og foreldre",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvem har ansvar for at barn i Norge går på skolen?",
+      "options": ["Foreldrene", "Naboene", "Politiet", "UDI"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Barn og familie",
+    "title": "Barns rettigheter",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva har alle barn i Norge rett til?",
+      "options": ["Omsorg og skolegang", "Å arbeide fulltid", "Å stemme ved valg", "Å kjøre bil"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Helse",
+    "title": "Rett til helsehjelp",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvem har rett til nødvendig helsehjelp i Norge?",
+      "options": ["Alle som bor i Norge", "Bare norske statsborgere", "Bare menn", "Bare de som betaler ekstra"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Helse",
+    "title": "Legevakt",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvor får du hjelp hvis du blir syk om natten og fastlegen er stengt?",
+      "options": ["Legevakten", "Skatteetaten", "Biblioteket", "Politiet"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Helse",
+    "title": "Finansiering av helse",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvordan er offentlig helsehjelp i Norge i hovedsak finansiert?",
+      "options": ["Gjennom skatter", "Av kongen", "Av kirken", "Av utlandet"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Utdanning og kompetanse",
+    "title": "Lik rett til utdanning",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Har jenter og gutter samme rett til utdanning i Norge?",
+      "options": ["Ja", "Nei, bare gutter", "Nei, bare jenter", "Bare med betaling"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Utdanning og kompetanse",
+    "title": "Skoleplikt",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Er det skoleplikt for barn i Norge?",
+      "options": ["Ja, i grunnskolen", "Nei", "Bare for norske barn", "Bare på videregående"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Utdanning og kompetanse",
+    "title": "Norskopplæring for voksne",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Har voksne innvandrere rett til opplæring i norsk?",
+      "options": ["Ja", "Nei", "Bare barn", "Bare hvis de betaler"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Arbeidsliv",
+    "title": "Skatt av lønn",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva betaler man av lønnen sin til fellesskapet i Norge?",
+      "options": ["Skatt", "Husleie", "Kirkeavgift", "Ingenting"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Arbeidsliv",
+    "title": "Diskriminering på jobb",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Er det lov å forskjellsbehandle ansatte på grunn av kjønn eller religion?",
+      "options": ["Nei, det er forbudt", "Ja", "Bare små bedrifter", "Bare staten kan"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Arbeidsliv",
+    "title": "Lik rett til arbeid",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Har kvinner og menn samme rett til å arbeide i Norge?",
+      "options": ["Ja", "Nei, bare menn", "Nei, bare kvinner", "Bare med tillatelse"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Demokrati og velferdssamfunn",
+    "title": "Stemmerettsalder",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Fra hvilken alder kan man stemme ved valg i Norge?",
+      "options": ["16 år", "18 år", "20 år", "21 år"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 1 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "FOUNDATION",
+    "area": "Demokrati og velferdssamfunn",
+    "title": "Stortingsvalg",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvor ofte er det stortingsvalg i Norge?",
+      "options": ["Hvert år", "Hvert andre år", "Hvert fjerde år", "Hvert femte år"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 2 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Demokrati og velferdssamfunn",
+    "title": "Ytringsfrihet",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hva betyr ytringsfrihet?",
+      "options": ["Retten til å si og mene det man vil", "At bare staten kan uttale seg", "At man må være enig med regjeringen", "At aviser er forbudt"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
+  },
+  {
+    "track": "CITIZENSHIP",
+    "exam": "STATSBORGERPROVEN",
+    "skill": "KNOWLEDGE",
+    "taskType": "MCQ_SINGLE",
+    "difficulty": "CORE",
+    "area": "Historie, geografi og levesett",
+    "title": "Nabolandene",
+    "prompt": "Choose the correct answer.",
+    "payload": {
+      "question": "Hvilke tre land grenser Norge til på land?",
+      "options": ["Sverige, Finland og Russland", "Danmark, Sverige og Island", "Finland, Russland og Polen", "Sverige, Danmark og Tyskland"]
+    },
+    "answer": { "type": "MCQ_SINGLE", "correctIndex": 0 },
+    "maxPoints": 1
   }
 ]
