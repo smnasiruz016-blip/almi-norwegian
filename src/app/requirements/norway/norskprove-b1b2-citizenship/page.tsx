@@ -24,7 +24,8 @@ import Link from "next/link";
 //
 // Sources: prove.hkdir.no (FAQ + Find your result + Language levels) and
 // udi.no/en/word-definitions/test-requirements-norwegian-citizenship/
-export const revalidate = 2592000;
+// HOLDING 2026-08-09 — was `2592000` (30-day ISR). No recurring regeneration under holding.
+export const revalidate = false;
 
 const PATH = "/requirements/norway/norskprove-b1b2-citizenship";
 
