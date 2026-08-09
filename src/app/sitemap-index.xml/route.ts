@@ -14,7 +14,8 @@ export const dynamic = "force-static";
 const SITE = "https://alminorwegian.almiworld.com";
 const PER = 50_000;
 const LASTMOD = "2026-07-10";
-const TOTAL_SHARDS = 1 + Math.ceil(TAUGHT_STUDY_TOTAL / PER) + Math.ceil(JOBS_TOTAL / PER);
+// HOLDING 2026-08-09 — mirrors sitemap.ts, which is down to one keep-set shard.
+const TOTAL_SHARDS = 1;
 
 export function GET(): Response {
   const items = Array.from({ length: TOTAL_SHARDS }, (_, i) =>
