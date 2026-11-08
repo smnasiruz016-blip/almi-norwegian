@@ -131,15 +131,11 @@ export type GradeOutcome =
  * self-rating flow. Never throws.
  */
 export async function gradeProductive(body: {
-  exam: NorwegianExam;
+  /** RR-399 A2: the server loads the task by this id and decides from it what is graded (Writing or Speaking, level,
+   *  criteria). skill and taskType are only checked against the item; a mismatch is refused. */
+  itemId: string;
   skill: NorwegianSkill;
   taskType: NorwegianTaskType;
-  /** The level THIS task is pitched at — the grade route judges the answer at this
-   *  level (via almi-data levelInstruction), never at the exam's "B1–B2" label. */
-  cefr?: CefrLevel;
-  title: string;
-  prompt: string;
-  criteria: string[];
   response: string;
 }): Promise<GradeOutcome> {
   try {

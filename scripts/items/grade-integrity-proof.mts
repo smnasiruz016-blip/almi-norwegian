@@ -57,8 +57,7 @@ function assert(label: string, cond: boolean, detail: string): void {
 // getCurrentUser(): a signed-in FREE-tier learner. Free tier matters — READING is a
 // free skill, so the objective path is reachable without the paid gate, which is
 // precisely the audience that could forge a POST.
-// prisma: its one call here is the best-effort attempt write, which already fails into
-// its own catch in production (NorwegianAttempt.itemId is an FK to an unpopulated table).
+// prisma: its one call here is the attempt write (it saves in production since RR-399 A1).
 // The stub rejects, so the proof also confirms grading survives a failed persist.
 // Interception is at RESOLVE, not load: the route imports these through the `@/…`
 // tsconfig alias, and tsx resolves that alias inside its own pipeline — a load hook never

@@ -14,25 +14,18 @@ import { aiGate, hasPracticeAccess, lockedCopy } from "@/lib/billing/free-access
 import { prisma } from "@/lib/prisma";
 import { getAnthropicClient, recordCost } from "@/lib/ai/anthropic-client";
 import { MODELS } from "@/lib/ai/models";
-import { examBySlug } from "@/lib/no/registry";
-import { isCefrLevel, levelInstruction } from "@smnasiruz016-blip/almi-data";
-import type { CefrLevel } from "@smnasiruz016-blip/almi-data";
-import type { NorwegianSkill, NorwegianTaskType } from "@/lib/no/types";
+import { buildGradePrompt, resolveGradeTask } from "@/lib/no/grade-task";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
 
+/** EVERYTHING THE CLIENT MAY SAY: which task (itemId) and what the learner wrote. RR-399 A2: the task type, skill, level, title,
+ *  prompt and criteria used to come from here, so the caller chose what was graded and which free use it counted as. Now they all
+ *  come from the server-loaded item; a taskType or skill in the body is only compared with the item (a mismatch is a 400). */
 interface GradeBody {
   itemId?: string;
-  exam?: string;
-  skill?: NorwegianSkill;
-  taskType?: NorwegianTaskType;
-  /** The level THIS task is pitched at. The exam's `cefr` is a display label and may be
-   *  a range ("A1–B1") or not a level at all ("Knowledge test") — see below. */
-  cefr?: CefrLevel;
-  title?: string;
-  prompt?: string;
-  criteria?: string[];
+  taskType?: string;
+  skill?: string;
   response?: string;
 }
 
@@ -115,65 +108,26 @@ export async function POST(req: Request): Promise<NextResponse> {
     );
   }
 
+  // ── RR-399 A2 · SERVER-AUTHORITATIVE: the task is loaded by id; its type decides Writing or Speaking ──
+  const task = resolveGradeTask(body);
+  if (!task.ok) return NextResponse.json({ ok: false, error: task.error }, { status: task.status });
+  const { itemId, kind } = task;
+
   // Key not provisioned yet → tell the client to fall back to self-rating.
   if (!keyAvailable()) {
     return NextResponse.json({ ok: true, available: false });
   }
 
-  const exam = body.exam ? examBySlug(body.exam) : undefined;
-  const examName = exam?.name ?? "the Norwegian exam";
-  // The level to judge THIS task at.
-  //
-  // This was `exam?.cefr`, which is the registry entry's DISPLAY LABEL — and the labels
-  // are not levels. Here they include "A1–A2", "A2–B1", "B1–B2" and "Knowledge test",
-  // so the model was told things like "(CEFR A2–B1)" — a two-level span no single task
-  // sits at — or, worse, "(CEFR Knowledge test)", which means nothing at all. A range
-  // cannot be a standard: the same answer passes as A2 and fails as B1 depending on
-  // where the model happens to aim.
-  //
-  // Order: the task's own level; else the exam's label ONLY IF it really is a single
-  // CEFR level (isCefrLevel rejects "A2–B1" and "Knowledge test"); else no level, and
-  // the model is told to assume none rather than be handed a guess.
-  const cefr: CefrLevel | null = isCefrLevel(body.cefr)
-    ? body.cefr
-    : isCefrLevel(exam?.cefr)
-      ? (exam.cefr as CefrLevel)
-      : null;
-  const levelPhrase = cefr ?? "the task's own criteria";
-  const isSpeaking = body.taskType === "SPEAKING_PROMPT";
-
   // RR-397: paid users as before (owner + comp bypass live inside hasPaidAccess); a free account (48 hours, no card) gets ONE
   // AI-scored Writing and ONE AI-scored Speaking, within today's free-AI budget. "Used" = AI scorings this account already
   // RECEIVED of this kind: the successful cost rows of this grader for that kind (written only after the model answered).
-  // This route still takes the task from the body, so the kind is the body's; a free account gets at most 2 AI scorings either way.
-  const kind = isSpeaking || body.skill === "SPEAKING" ? "SPEAKING" : "WRITING";
   const feature = gradeFeature(kind);
   const gate = await aiGate(user, kind, () =>
     prisma.aICostLedger.count({ where: { userId: user.id, feature, success: true } }),
   );
   if (!gate.ok) return NextResponse.json(gate.body, { status: gate.status });
-  const criteria = (body.criteria ?? []).filter((c) => typeof c === "string" && c.trim().length > 0);
 
-  const system = [
-    `You are an experienced Norwegian-language examiner for ${examName}.`,
-    levelInstruction(cefr ?? undefined),
-    `You give an HONEST practice readiness estimate against the task's own criteria — this is a study aid, never an official UDI or Ministry result, and you never claim otherwise.`,
-    isSpeaking
-      ? `This is a SPEAKING task; the learner has typed the answer they would say aloud, so judge content, structure, range and appropriacy, not pronunciation.`
-      : `This is a WRITING task; judge task fulfilment, coherence, range and accuracy at ${levelPhrase}.`,
-    `Be constructive, specific and level-aware. Do not inflate. Reply with STRICT JSON only, no prose, no code fences, in this exact shape:`,
-    `{"band":"CLEAR|BORDERLINE|BELOW","summary":"1-2 sentence honest estimate","strengths":["..."],"improvements":["..."]}`,
-    `Bands: CLEAR = comfortably meets the criteria at ${levelPhrase}; BORDERLINE = partially meets them, could go either way; BELOW = does not yet meet them.`,
-  ].join(" ");
-
-  const userMsg = [
-    body.title ? `Task: ${body.title}` : null,
-    body.prompt ? `Instructions: ${body.prompt}` : null,
-    criteria.length ? `Criteria the answer should meet:\n- ${criteria.join("\n- ")}` : null,
-    `\nLearner's answer:\n"""${response.slice(0, 6000)}"""`,
-  ]
-    .filter(Boolean)
-    .join("\n");
+  const { system, user: userMsg } = buildGradePrompt(task, response);
 
   let feedback: AiFeedback | null = null;
   try {
@@ -210,32 +164,33 @@ export async function POST(req: Request): Promise<NextResponse> {
       success: false,
       errorMessage: e instanceof Error ? e.message : String(e),
     });
+    // RR-399 A3: the learner received nothing, so the free use is given back.
+    await gate.release();
     // Fall back to self-rating rather than 500 on a transient model error.
     return NextResponse.json({ ok: true, available: false });
   }
 
   if (!feedback) {
+    await gate.release(); // RR-399 A3: no usable feedback reached the learner
     return NextResponse.json({ ok: true, available: false });
   }
 
-  // Best-effort persistence — bundled items have no DB id, so a missing/unknown
-  // itemId simply skips the write (never 500s on an empty database).
-  if (body.itemId) {
-    try {
-      await prisma.norwegianAttempt.create({
-        data: {
-          userId: user.id,
-          itemId: body.itemId,
-          status: "EVALUATED",
-          response: { text: response } as object,
-          aiFeedback: feedback as unknown as object,
-          readiness: feedback.band,
-          submittedAt: new Date(),
-        },
-      });
-    } catch {
-      // ignore — attempts are optional this pass
-    }
+  // Persistence uses the VALIDATED id (it resolved to a served item). RR-399 A1: itemId is a plain id (no foreign key), so this
+  // write now saves. A failure is logged loudly; it never costs the learner the feedback.
+  try {
+    await prisma.norwegianAttempt.create({
+      data: {
+        userId: user.id,
+        itemId,
+        status: "EVALUATED",
+        response: { text: response } as object,
+        aiFeedback: feedback as unknown as object,
+        readiness: feedback.band,
+        submittedAt: new Date(),
+      },
+    });
+  } catch (e) {
+    console.error("[no/grade] ATTEMPT NOT SAVED", { userId: user.id, itemId, error: e instanceof Error ? e.message : String(e) });
   }
 
   return NextResponse.json({ ok: true, available: true, ...feedback });
