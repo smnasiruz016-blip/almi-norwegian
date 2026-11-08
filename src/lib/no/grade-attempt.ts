@@ -18,6 +18,7 @@
 // practice-vs-mock split is decided by WHICH ROUTE runs, not by any client flag.
 
 import { hasPaidAccess } from "@/lib/billing/plans";
+import { hasPracticeAccess, lockedCopy } from "@/lib/billing/free-access";
 import { prisma } from "@/lib/prisma";
 import { gradeObjective } from "@/lib/no/grading";
 import { getItemById } from "@/lib/no/items";
@@ -62,8 +63,12 @@ export async function gradeAttempt(body: AttemptBody, user: PaidUser): Promise<G
   // Gate: productive / AI tasks require paid access (owner + comp bypass inside).
   // Derived from the LOADED item's skill and taskType — a client that claimed
   // skill:"READING" over a WRITING item used to walk straight through this.
-  if (productive && !hasPaidAccess(user)) {
-    return { ok: false, status: 402, error: "Productive feedback is a Pro feature" };
+  // RR-397: saving a productive answer with the learner's OWN rating uses no AI, so it is open to paid users and inside the
+  // free 48 hours (no card). AI feedback has its own door (aiGate in /api/no/grade). Reading/Listening stay free, as before.
+  // The full mock page stays paid only; its submit route shares this function.
+  if (productive && !hasPracticeAccess(user)) {
+    const c = lockedCopy(user);
+    return { ok: false, status: 402, error: `${c.title}. ${c.line}` };
   }
 
   let points = 0;
