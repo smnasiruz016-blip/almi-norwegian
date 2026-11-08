@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s · AlmiNorwegian",
   },
   description:
-    "Practise the Norwegian exams — Norskprøven A1–A2, A2–B1 and B1–B2, Bergenstesten, and the Statsborgerprøven and Samfunnskunnskapsprøven knowledge tests — with honest per-skill readiness estimates and AI feedback. $12/month with a 7-day free trial. Original material, never copied from official exam papers. Confirm residency and citizenship rules with UDI. Part of the AlmiWorld family.",
+    "Practise the Norwegian exams — Norskprøven A1–A2, A2–B1 and B1–B2, Bergenstesten, and the Statsborgerprøven and Samfunnskunnskapsprøven knowledge tests — with honest per-skill readiness estimates and AI feedback. Try free for 48 hours, then $12/month. Original material, never copied from official exam papers. Confirm residency and citizenship rules with UDI. Part of the AlmiWorld family.",
   applicationName: "AlmiNorwegian",
   authors: [{ name: "AlmiWorld" }],
   keywords: ["Norskprøven", "Norskprøven B1–B2", "Norwegian citizenship test", "Statsborgerprøven", "Samfunnskunnskapsprøven", "Bergenstesten", "learn Norwegian", "Norwegian exam practice", "permanent residence Norway", "AlmiNorwegian", "AlmiWorld"],
