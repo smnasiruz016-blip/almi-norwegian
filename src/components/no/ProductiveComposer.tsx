@@ -90,13 +90,9 @@ export function ProductiveComposer({
     setAiBusy(true);
     setAiError(null);
     const outcome = await gradeProductive({
-      exam: item.exam,
+      itemId: item.id,
       skill: item.skill,
       taskType: item.taskType,
-      cefr: item.cefr,
-      title: item.title,
-      prompt: item.prompt,
-      criteria: d.criteria,
       response: text,
     });
     setAiBusy(false);

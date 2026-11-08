@@ -1,11 +1,10 @@
 // Stub for @/lib/prisma, used ONLY by scripts/items/grade-integrity-proof.mts.
 //
 // The proof runs with no database and no DATABASE_URL. The single prisma call on the
-// grading path is the best-effort attempt write, which ALREADY fails in production —
-// NorwegianAttempt.itemId is a required FK to NorwegianItem, a table nothing populates
-// because items are served from JSON bundles. So this stub rejects rather than resolving:
-// it reproduces the real behaviour, and it makes the proof assert something worth
-// asserting — that a failed persist never changes the score the learner is given.
+// grading path is the attempt write (since RR-399 A1 it saves in production: the FK to
+// the never-filled NorwegianItem table is gone). This stub rejects rather than resolving,
+// so the proof asserts something worth asserting — that a failed persist (a database
+// outage) never changes the score the learner is given.
 
 export const prisma = {
   norwegianAttempt: {
