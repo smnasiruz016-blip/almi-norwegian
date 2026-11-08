@@ -45,6 +45,7 @@ const SCAN_EXT = /\.(ts|tsx|js|mjs|json|prisma|css|md)$/;
 const ALLOWLIST = new Map([
   // The family nav legitimately links to sibling AlmiWorld products by name.
   ["src/lib/nav/family.ts", "links to sibling AlmiWorld products by name"],
+  ["src/lib/almiworld-family.ts", "RR-398: the generated AlmiWorld family kit links to sibling AlmiWorld products by name"],
   // This gate documents the exact leaks it prevents.
   ["scripts/seo/fork-hygiene-gate.mjs", "documents the banned nouns"],
 ]);
